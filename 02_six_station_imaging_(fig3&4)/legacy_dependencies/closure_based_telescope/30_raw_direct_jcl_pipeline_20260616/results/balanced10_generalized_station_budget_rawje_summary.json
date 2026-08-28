@@ -1,0 +1,204 @@
+{
+  "definition": {
+    "loop_set": [
+      "S1-S2-S3",
+      "S1-S2-S4",
+      "S1-S2-S5",
+      "S1-S3-S4",
+      "S1-S3-S6",
+      "S2-S4-S5",
+      "S2-S5-S6",
+      "S3-S4-S6",
+      "S3-S5-S6",
+      "S4-S5-S6"
+    ],
+    "legacy_raw_linear_model": "Old shortcut: build unit-budget raw triangle edge Fisher with equal station fractions and multiply the integrated branch by omega_l=0.2 before the final global Schur complement.",
+    "corrected_raw_symmetric_model": "Correct physical raw Je schedule with a_{loop,i}=0.2 for the three stations in each balanced-10 loop and zero otherwise, then one final global Schur complement.",
+    "corrected_raw_generalized_model": "Correct physical raw Je schedule with independently optimized a_{loop,i} on each incident loop of each station, subject to one unit of total station budget per station.",
+    "old_local_opt_reference": "Loaded from 18_balanced_10loop_independent_set_20260611/results/remote_star_joint_loop_gains.csv.",
+    "snr_gain_definition": "sigma_edge_uniform / sigma_strategy for each balanced-10 loop",
+    "n_samples": 360,
+    "exposure_s": 600.0
+  },
+  "optimized_schedule_info": {
+    "objective": "same balanced-10 score as the old direct schedule: mean log gain + 0.35 min log gain - 0.65 var log gain - 30 mean below-one penalty squared",
+    "model": "corrected_raw_Je_with_per_loop_per_station_fractions",
+    "constraints": "a_{loop,station} >= 0, a_{loop,station} = 0 outside the loop, and sum_{incident loops} a_{loop,station} = 1 for each station",
+    "seed": 20260616,
+    "n_evaluations": 412,
+    "best_start": "uniform_0p2_each_incident_loop",
+    "score": 0.6602919697790365,
+    "gain_vs_edge": {
+      "min": 1.5812111188439868,
+      "mean": 1.652714836245807,
+      "median": 1.6337340768731408,
+      "max": 1.8438963837921354
+    },
+    "station_row_sums": {
+      "S1": 1.0,
+      "S2": 1.0,
+      "S3": 1.0,
+      "S4": 1.0,
+      "S5": 1.0,
+      "S6": 1.0
+    },
+    "loop_station_fractions": {
+      "S1-S2-S3": {
+        "S1": 0.16500000000000004,
+        "S2": 0.3,
+        "S3": 0.26999999999999996
+      },
+      "S1-S2-S4": {
+        "S1": 0.16999999999999998,
+        "S2": 0.18000000000000005,
+        "S4": 0.15000000000000002
+      },
+      "S1-S2-S5": {
+        "S1": 0.25,
+        "S2": 0.21500000000000002,
+        "S5": 0.2
+      },
+      "S1-S3-S4": {
+        "S1": 0.18000000000000005,
+        "S3": 0.18000000000000005,
+        "S4": 0.16999999999999998
+      },
+      "S1-S3-S6": {
+        "S1": 0.235,
+        "S3": 0.245,
+        "S6": 0.265
+      },
+      "S2-S4-S5": {
+        "S2": 0.185,
+        "S4": 0.2,
+        "S5": 0.16999999999999998
+      },
+      "S2-S5-S6": {
+        "S2": 0.12000000000000001,
+        "S5": 0.2,
+        "S6": 0.185
+      },
+      "S3-S4-S6": {
+        "S3": 0.2,
+        "S4": 0.235,
+        "S6": 0.15000000000000002
+      },
+      "S3-S5-S6": {
+        "S3": 0.10500000000000001,
+        "S5": 0.135,
+        "S6": 0.12000000000000001
+      },
+      "S4-S5-S6": {
+        "S4": 0.24500000000000005,
+        "S5": 0.29500000000000004,
+        "S6": 0.28
+      }
+    },
+    "station_rows": {
+      "S1": {
+        "S1-S2-S3": 0.16500000000000004,
+        "S1-S2-S4": 0.16999999999999998,
+        "S1-S2-S5": 0.25,
+        "S1-S3-S4": 0.18000000000000005,
+        "S1-S3-S6": 0.235
+      },
+      "S2": {
+        "S1-S2-S3": 0.3,
+        "S1-S2-S4": 0.18000000000000005,
+        "S1-S2-S5": 0.21500000000000002,
+        "S2-S4-S5": 0.185,
+        "S2-S5-S6": 0.12000000000000001
+      },
+      "S3": {
+        "S1-S2-S3": 0.26999999999999996,
+        "S1-S3-S4": 0.18000000000000005,
+        "S1-S3-S6": 0.245,
+        "S3-S4-S6": 0.2,
+        "S3-S5-S6": 0.10500000000000001
+      },
+      "S4": {
+        "S1-S2-S4": 0.15000000000000002,
+        "S1-S3-S4": 0.16999999999999998,
+        "S2-S4-S5": 0.2,
+        "S3-S4-S6": 0.235,
+        "S4-S5-S6": 0.24500000000000005
+      },
+      "S5": {
+        "S1-S2-S5": 0.2,
+        "S2-S4-S5": 0.16999999999999998,
+        "S2-S5-S6": 0.2,
+        "S3-S5-S6": 0.135,
+        "S4-S5-S6": 0.29500000000000004
+      },
+      "S6": {
+        "S1-S3-S6": 0.265,
+        "S2-S5-S6": 0.185,
+        "S3-S4-S6": 0.15000000000000002,
+        "S3-S5-S6": 0.12000000000000001,
+        "S4-S5-S6": 0.28
+      }
+    },
+    "loop_total_incident_fraction": {
+      "S1-S2-S3": 0.735,
+      "S1-S2-S4": 0.5,
+      "S1-S2-S5": 0.665,
+      "S1-S3-S4": 0.53,
+      "S1-S3-S6": 0.745,
+      "S2-S4-S5": 0.5549999999999999,
+      "S2-S5-S6": 0.505,
+      "S3-S4-S6": 0.585,
+      "S3-S5-S6": 0.36000000000000004,
+      "S4-S5-S6": 0.8200000000000001
+    }
+  },
+  "summary": {
+    "legacy_raw_linear_gain_vs_edge": {
+      "min": 1.467868953176819,
+      "mean": 1.630445986425622,
+      "median": 1.6442371947242471,
+      "max": 1.7642561563837107
+    },
+    "corrected_raw_symmetric_gain_vs_edge": {
+      "min": 1.4678689531768045,
+      "mean": 1.6304459864256198,
+      "median": 1.644237194724247,
+      "max": 1.764256156383712
+    },
+    "corrected_raw_generalized_gain_vs_edge": {
+      "min": 1.5812111188439868,
+      "mean": 1.652714836245807,
+      "median": 1.6337340768731408,
+      "max": 1.8438963837921354
+    },
+    "old_local_schur_opt_gain_vs_edge": {
+      "min": 1.2112182127920084,
+      "mean": 1.2657068827332938,
+      "median": 1.2348022012752549,
+      "max": 1.4027337769266373
+    },
+    "corrected_symmetric_over_legacy": {
+      "min": 0.9999999999999901,
+      "mean": 0.9999999999999984,
+      "median": 0.999999999999999,
+      "max": 1.0000000000000009
+    },
+    "generalized_over_corrected_symmetric": {
+      "min": 0.9292117528850694,
+      "mean": 1.0154146099102017,
+      "median": 1.0144109278368438,
+      "max": 1.1230029146873879
+    },
+    "generalized_over_old_local_opt": {
+      "min": 1.2127591394614285,
+      "mean": 1.3073563911926092,
+      "median": 1.3009098520504963,
+      "max": 1.4445544473249483
+    }
+  },
+  "outputs": {
+    "loop_gains_csv": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/results/balanced10_generalized_station_budget_rawje_loop_gains.csv",
+    "optimized_station_schedule_json": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/results/balanced10_generalized_station_budget_rawje_optimized_station_schedule.json",
+    "figure_pdf": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/figures/balanced10_generalized_station_budget_rawje.pdf",
+    "figure_png": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/figures/balanced10_generalized_station_budget_rawje.png"
+  }
+}

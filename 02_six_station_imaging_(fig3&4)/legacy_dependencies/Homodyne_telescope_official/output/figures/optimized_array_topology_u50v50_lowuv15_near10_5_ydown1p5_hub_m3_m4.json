@@ -1,0 +1,59 @@
+{
+  "stations_km": [
+    [
+      -2.011189452413854,
+      -6.061935322886044
+    ],
+    [
+      -2.088492380717189,
+      -4.841835578338522
+    ],
+    [
+      -0.9192103656207964,
+      14.00565674199472
+    ],
+    [
+      -4.924019980176316,
+      -5.505903719007969
+    ],
+    [
+      12.573662262735722,
+      6.007777568529107
+    ],
+    [
+      -5.565548849731284,
+      -0.011765434171819286
+    ],
+    [
+      -0.24160289958985937,
+      -2.541461820362973
+    ],
+    [
+      14.499764875867175,
+      -3.2949657384223427
+    ]
+  ],
+  "hub_km": [
+    -3.0,
+    -4.0
+  ],
+  "parent_layout": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/output/figures/optimized_array_topology_u50v50_lowuv15_near10_5_ydown1p5.json",
+  "moved_station_index": 4,
+  "target_coordinate_km": [
+    10.0,
+    5.0
+  ],
+  "moved_station_old_km": [
+    12.573662262735722,
+    7.507777568529107
+  ],
+  "moved_station_new_km": [
+    12.573662262735722,
+    6.007777568529107
+  ],
+  "description": "u50v50 low-uv optimized layout with station nearest (10,5) moved south by 1.5 km and hub moved to (-3,-4)",
+  "baseline_min_km": 1.2225461665594475,
+  "baseline_max_km": 23.17447595324501,
+  "hub_distance_min_km": 1.2407793038921835,
+  "hub_distance_max_km": 18.512011455671505
+}

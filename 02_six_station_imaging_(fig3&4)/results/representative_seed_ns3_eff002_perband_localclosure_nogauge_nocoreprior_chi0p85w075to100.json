@@ -1,0 +1,70 @@
+{
+  "criterion": "minimum Euclidean distance to the ensemble mean in six standardized image-correlation coordinates",
+  "selected_seed": 20260536,
+  "seeds": [
+    20260529,
+    20260530,
+    20260531,
+    20260532,
+    20260533,
+    20260534,
+    20260535,
+    20260536,
+    20260537,
+    20260538,
+    20260539,
+    20260540
+  ],
+  "coordinate_order": [
+    "edge_uniform:blr_corr",
+    "edge_uniform:global_corr",
+    "optimal_singlecopy:blr_corr",
+    "optimal_singlecopy:global_corr",
+    "promoted_singlecopy:blr_corr",
+    "promoted_singlecopy:global_corr"
+  ],
+  "ensemble_mean": [
+    0.6863622897642722,
+    0.9052404400837806,
+    0.7259868740113228,
+    0.9135682506582201,
+    0.8096854665702233,
+    0.9380322584658893
+  ],
+  "ensemble_sample_std": [
+    0.025474311078941388,
+    0.011314453791542915,
+    0.024597220134229762,
+    0.00978609467559154,
+    0.013297340213869692,
+    0.0073576334584761465
+  ],
+  "standardized_distances": {
+    "20260529": 2.2049919449998185,
+    "20260530": 2.1377046760473375,
+    "20260531": 2.9452823876640797,
+    "20260532": 1.9234471365645707,
+    "20260533": 2.2040077548436514,
+    "20260534": 2.4974640038528877,
+    "20260535": 2.1064216863929808,
+    "20260536": 1.3012362112588183,
+    "20260537": 2.8594678161276,
+    "20260538": 1.9400546037676334,
+    "20260539": 3.6163302014109435,
+    "20260540": 1.3965941411850655
+  },
+  "input_summaries": [
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260529/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260529_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260530/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260530_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260531/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260531_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260532/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260532_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260533/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260533_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260534/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260534_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260535/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260535_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260536/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260536_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260537/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260537_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260538/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260538_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260539/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260539_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260540/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260540_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json"
+  ]
+}

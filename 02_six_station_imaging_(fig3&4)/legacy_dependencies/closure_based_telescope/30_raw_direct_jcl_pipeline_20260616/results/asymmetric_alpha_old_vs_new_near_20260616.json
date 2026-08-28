@@ -1,0 +1,49 @@
+{
+  "definition": {
+    "near_model": "core-direct plus remote-edge near receiver optimized with independent alpha_i on the three core stations",
+    "optimizer": "rawje_balanced10_helpers.optimize_near_coreedge",
+    "seed": 20260617,
+    "old_target": "old local-Schur optimized direct benchmark from 18_balanced_10loop_independent_set_20260611",
+    "new_target": "corrected raw Je balanced-10 generalized station-budget direct benchmark from balanced10_generalized_station_budget_rawje_loop_gains.csv"
+  },
+  "old_target_asymmetric_alpha_near": {
+    "alpha_core": [
+      0.25207893228802897,
+      0.11062512626794233,
+      0.06228785786885048
+    ],
+    "near_gain_vs_edge": {
+      "min": 1.0580608647126535,
+      "mean": 1.1117305793464727,
+      "median": 1.0834325571073355,
+      "max": 1.2252323238038176
+    },
+    "near_ratio_vs_target_direct": {
+      "min": 0.8727845357045161,
+      "mean": 0.8782292983651601,
+      "median": 0.8771098314883383,
+      "max": 0.8942684127247712
+    },
+    "match_score": -0.13692756405084064
+  },
+  "new_target_asymmetric_alpha_near": {
+    "alpha_core": [
+      0.14674124347984768,
+      0.12149999355898217,
+      0.12417827073995638
+    ],
+    "near_gain_vs_edge": {
+      "min": 1.0638710903730695,
+      "mean": 1.1199209686809752,
+      "median": 1.099439108335559,
+      "max": 1.2505703338706498
+    },
+    "near_ratio_vs_target_direct": {
+      "min": 0.6727776513071634,
+      "mean": 0.6774164552200619,
+      "median": 0.6729709003892327,
+      "max": 0.7022941789948111
+    },
+    "match_score": -0.4039871700767399
+  }
+}

@@ -1,0 +1,132 @@
+[setup] ns=3 dimensions=[56, 70, 20] multiplicities=[1, 2, 1] outcomes=[112, 140, 40]
+[gradient-check] {"analytic_directional_derivative": 4.530984199313528, "numerical_directional_derivative": 4.530984192285814, "relative_error": 1.551034656730611e-09}
+[POVM] exact split-PVM risk=102.2234369 complete=7.906e-15
+[POVM] restart=1/4 step=250 risk=89.9753049 grad=1.368e-01
+[POVM] restart=1/4 step=500 risk=89.3115336 grad=6.931e-02
+[POVM] restart=1/4 step=750 risk=89.0519673 grad=4.912e-02
+[POVM] restart=1/4 step=1000 risk=88.9141306 grad=3.869e-02
+[POVM] restart=1/4 step=1250 risk=88.8150695 grad=3.379e-02
+[POVM] restart=1/4 step=1500 risk=88.7418741 grad=2.969e-02
+[POVM] restart=1/4 risk=88.71766184 grad=2.792e-02 steps=1600 complete=6.917e-15
+[POVM] restart=2/4 step=250 risk=90.0711179 grad=1.305e-01
+[POVM] restart=2/4 step=500 risk=89.3876435 grad=7.082e-02
+[POVM] restart=2/4 step=750 risk=89.1199655 grad=5.119e-02
+[POVM] restart=2/4 step=1000 risk=88.9654738 grad=3.937e-02
+[POVM] restart=2/4 step=1250 risk=88.8723976 grad=3.218e-02
+[POVM] restart=2/4 step=1500 risk=88.8049293 grad=2.772e-02
+[POVM] restart=2/4 risk=88.78257193 grad=2.701e-02 steps=1600 complete=6.514e-15
+[POVM] restart=3/4 step=250 risk=90.0356728 grad=1.345e-01
+[POVM] restart=3/4 step=500 risk=89.2967441 grad=7.303e-02
+[POVM] restart=3/4 step=750 risk=89.0258311 grad=4.816e-02
+[POVM] restart=3/4 step=1000 risk=88.9072829 grad=3.281e-02
+[POVM] restart=3/4 step=1250 risk=88.8381168 grad=2.908e-02
+[POVM] restart=3/4 step=1500 risk=88.7776225 grad=2.768e-02
+[POVM] restart=3/4 risk=88.7551767 grad=2.703e-02 steps=1600 complete=6.375e-15
+[POVM] restart=4/4 step=250 risk=90.0543885 grad=1.331e-01
+[POVM] restart=4/4 step=500 risk=89.2802106 grad=7.592e-02
+[POVM] restart=4/4 step=750 risk=88.9974923 grad=5.002e-02
+[POVM] restart=4/4 step=1000 risk=88.8567392 grad=3.838e-02
+[POVM] restart=4/4 step=1250 risk=88.7577541 grad=3.452e-02
+[POVM] restart=4/4 step=1500 risk=88.6816442 grad=2.924e-02
+[POVM] restart=4/4 risk=88.65752232 grad=2.752e-02 steps=1600 complete=6.308e-15
+{
+  "definition": "Locally A-optimal overcomplete rank-one POVM search, with every d-dimensional Schur block represented by a d x (q d) row-isometry.",
+  "working_point": {
+    "band_index": 0,
+    "time_index": 18,
+    "lambda_center_nm": 604.9793384901669,
+    "hour_angle_rad": 3.6361026082686072e-06,
+    "one_photon_occupation": 1.0023647665532665e-08,
+    "rho_eigenvalues": [
+      0.11089838526404672,
+      0.12888078582910797,
+      0.13078594199031765,
+      0.1364369390073891,
+      0.1427013348862861,
+      0.3502966130228527
+    ],
+    "n_station": 6,
+    "n_edge_amplitude": 15,
+    "n_closure_phase": 10,
+    "n_piston_nuisance": 5,
+    "singlecopy_povm_hash": "fb5f2ab6a50c1c715f6510ae118bf4a1ab18ff8d32839f9e317dddbd72885c10",
+    "singlecopy_effect_count": 291,
+    "singlecopy_lift_kappa": 0.1515349143793126,
+    "existing_coupled_area_fraction": 1.0,
+    "remote_diameter_m": 6.0,
+    "photon_collection_efficiency": 0.02
+  },
+  "copies": 3,
+  "redundancy": 2,
+  "block_dimensions": [
+    56,
+    70,
+    20
+  ],
+  "block_multiplicities": [
+    1,
+    2,
+    1
+  ],
+  "block_outcomes": [
+    112,
+    140,
+    40
+  ],
+  "pvm_risk": 102.2234368670757,
+  "povm_risk": 88.65752231824655,
+  "singlecopy_risk": 218.3244761031033,
+  "qlan_risk": 27.18735909930762,
+  "povm_over_pvm_risk": 0.8672915432644929,
+  "fisher_gain_povm_over_pvm": 1.1530148169507006,
+  "aggregate_fisher_gain_povm_over_single": 2.4625600895928725,
+  "aggregate_snr_gain_povm_over_single": 1.569254628667022,
+  "global_fisher_factor_povm_over_qlan": 0.30665597671132083,
+  "completeness_error": 6.308208691373586e-15,
+  "probability_sum": 1.0000000000000004,
+  "gradient_check": {
+    "analytic_directional_derivative": 4.530984199313528,
+    "numerical_directional_derivative": 4.530984192285814,
+    "relative_error": 1.551034656730611e-09
+  },
+  "optimizer_records": [
+    {
+      "restart": -1,
+      "objective": 102.2234368670757,
+      "gradient_norm": 1.75083721846433,
+      "steps": 0,
+      "initialization": "exact_split_pvm"
+    },
+    {
+      "restart": 0,
+      "objective": 88.71766183798732,
+      "gradient_norm": 0.02791546420496962,
+      "steps": 1600,
+      "initialization": "perturbed_split_0.035"
+    },
+    {
+      "restart": 1,
+      "objective": 88.78257193323584,
+      "gradient_norm": 0.02700773341479309,
+      "steps": 1600,
+      "initialization": "perturbed_split_0.046667"
+    },
+    {
+      "restart": 2,
+      "objective": 88.75517669742838,
+      "gradient_norm": 0.0270263261657325,
+      "steps": 1600,
+      "initialization": "perturbed_split_0.058333"
+    },
+    {
+      "restart": 3,
+      "objective": 88.65752231824655,
+      "gradient_norm": 0.0275157690723713,
+      "steps": 1600,
+      "initialization": "random_tight_frame"
+    }
+  ],
+  "caveat": "This is a local nonconvex rank-one POVM optimum in a fixed copy-permutation block-diagonal class, not a global finite-copy optimality certificate and not yet a strict score-preserving lift."
+}
+/Users/xinyaoguo/Desktop/VLBI/telescope_final/fig2_eff002_no_core_prior_0819/finite_ns3_povm_q2_band00_604p979nm.json
+/Users/xinyaoguo/Desktop/VLBI/telescope_final/fig2_eff002_no_core_prior_0819/finite_ns3_povm_q2_band00_604p979nm.npz

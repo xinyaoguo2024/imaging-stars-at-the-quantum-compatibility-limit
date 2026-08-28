@@ -1,0 +1,21 @@
+{
+  "source_display_cache": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260536/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260536_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_selected_display_cache.npz",
+  "source_representative_summary": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260536/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260536_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+  "source_statistics": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/plotting_data/paired_12seed_100ms_summary.json",
+  "source_seed_metrics": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/plotting_data/paired_12seed_100ms_seed_metrics.csv",
+  "cutoff": 0.015,
+  "contour_levels": [
+    0.015,
+    0.03,
+    0.1,
+    0.3
+  ],
+  "gain_definition": "closure-phase SNR gain = square root of the reciprocal nuisance-marginalized variance ratio",
+  "asymptotic_series_in_statistics_figure": false,
+  "outputs": [
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/generated_outputs/fig3_fourpanel_singlecolumn.pdf",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/generated_outputs/fig3_fourpanel_singlecolumn.png",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/generated_outputs/fig4_statistics_singlecolumn.pdf",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/generated_outputs/fig4_statistics_singlecolumn.png"
+  ]
+}

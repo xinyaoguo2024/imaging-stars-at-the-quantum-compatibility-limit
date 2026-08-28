@@ -1,0 +1,88 @@
+{
+  "definition": {
+    "raw_direct": "integrated weighted raw triangle edge Fisher matrices, followed by one global station-gauge Schur complement",
+    "optimization_objective": "same as old direct optimized schedule: mean log gain + 0.35 min log gain - 0.65 var log gain - 30 mean below-one penalty squared",
+    "constraints": "w_tau >= 0 and sum_{tau contains station i} w_tau = 1 for each station",
+    "old_optimal_source": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/18_balanced_10loop_independent_set_20260611/results/remote_star_joint_near_summary.json",
+    "old_loop_gain_source": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/18_balanced_10loop_independent_set_20260611/results/remote_star_joint_loop_gains.csv",
+    "exposure_s": 600.0,
+    "n_samples": 360
+  },
+  "summary": {
+    "old_local_schur_opt_gain_vs_edge": {
+      "min": 1.2112182127920084,
+      "mean": 1.2657068827332938,
+      "median": 1.2348022012752549,
+      "max": 1.4027337769266373,
+      "score": 0.29984040038329557
+    },
+    "rawje_samecost_opt_gain_vs_edge": {
+      "min": 1.5883848555624343,
+      "mean": 1.6484621794899212,
+      "median": 1.5946013924940514,
+      "max": 1.8791149540359813,
+      "score": 0.6586675136444865
+    },
+    "raw_opt_over_old_local_snr": {
+      "min": 1.1863644217732714,
+      "mean": 1.3046789251041557,
+      "median": 1.3063822067897646,
+      "max": 1.4721455542447117,
+      "score": 0.3214943192413108
+    }
+  },
+  "optimization": {
+    "objective": "same as old direct optimized schedule: mean log gain + 0.35 min log gain - 0.65 var log gain - 30 mean below-one penalty squared",
+    "score": 0.6586675136444865,
+    "n_evaluations": 8201,
+    "constraints": "w_tau >= 0 and sum_{tau contains station i} w_tau = 1 for each station",
+    "station_weight_sums": {
+      "S1": 1.0000000000000002,
+      "S2": 1.0,
+      "S3": 0.9999999999999998,
+      "S4": 0.9999999999999998,
+      "S5": 1.0,
+      "S6": 1.0
+    },
+    "max_station_weight_error": 2.220446049250313e-16,
+    "top_triangle_weights": {
+      "S4-S5-S6": 0.2505915572126515,
+      "S1-S2-S3": 0.20506731105181014,
+      "S1-S2-S5": 0.20043983582674132,
+      "S2-S4-S5": 0.19924262419835065,
+      "S3-S4-S6": 0.18771384538546929,
+      "S1-S3-S6": 0.18115625252033343,
+      "S1-S3-S4": 0.16740173202346353,
+      "S1-S2-S4": 0.1352296546364954,
+      "S3-S5-S6": 0.11694506732336583,
+      "S2-S5-S6": 0.10360524728370603
+    }
+  },
+  "rawje_samecost_opt_weights": {
+    "S1-S2-S3": 0.20506731105181014,
+    "S1-S2-S4": 0.1352296546364954,
+    "S1-S2-S5": 0.20043983582674132,
+    "S1-S2-S6": 0.015904356544946673,
+    "S1-S3-S4": 0.16740173202346353,
+    "S1-S3-S5": 0.0009820197752317063,
+    "S1-S3-S6": 0.18115625252033343,
+    "S1-S4-S5": 0.0003393375684353357,
+    "S1-S4-S6": 0.0017473841893329786,
+    "S1-S5-S6": 0.09173211586320972,
+    "S2-S3-S4": 0.05517528997116396,
+    "S2-S3-S5": 0.034731506809801506,
+    "S2-S3-S6": 0.049436287000853944,
+    "S2-S4-S5": 0.19924262419835065,
+    "S2-S4-S6": 0.001167886676130599,
+    "S2-S5-S6": 0.10360524728370603,
+    "S3-S4-S5": 0.0013906881385064907,
+    "S3-S4-S6": 0.18771384538546929,
+    "S3-S5-S6": 0.11694506732336583,
+    "S4-S5-S6": 0.2505915572126515
+  },
+  "outputs": {
+    "loop_gains_csv": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/results/rawje_opt_samecost_vs_oldopt_loop_gains.csv",
+    "figure_pdf": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/figures/rawje_opt_samecost_vs_oldopt.pdf",
+    "figure_png": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/figures/rawje_opt_samecost_vs_oldopt.png"
+  }
+}

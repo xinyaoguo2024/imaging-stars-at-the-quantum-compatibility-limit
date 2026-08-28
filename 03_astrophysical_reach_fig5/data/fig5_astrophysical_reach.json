@@ -1,0 +1,140 @@
+{
+  "artifact": "fig5_astrophysical_reach",
+  "source_monte_carlo_summary": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/03_astrophysical_reach_fig5/data/fixed_modulus_phase_gain_summary.json",
+  "target_loop": "S1-S2-S3, fixed before sampling",
+  "averaging": "arithmetic mean Fisher gain at each magnitude",
+  "edge_first": "exact fixed-|g|=0.5 copy-local uniform edge-first reference",
+  "sigma_cl_equals_pi": {
+    "phase_mean_promoted_mag_ab": 20.678422804906063,
+    "copy_local_edge_first_mag_ab": 17.937232675540116
+  },
+  "displayed_gain_audit": {
+    "magnitude_range": [
+      10.0,
+      21.0
+    ],
+    "mean_fisher_gain_range": [
+      22.384947450016465,
+      29.453970608853815
+    ],
+    "baseline_or_snr_gain_range": [
+      4.731273343405184,
+      5.427151242489361
+    ]
+  },
+  "parameters": {
+    "N": 20,
+    "all_offdiagonal_magnitudes": 0.5,
+    "M_total": 100000000000.0,
+    "eta": 0.2,
+    "epsilon": 1e-11,
+    "phase_budget_fraction": 1.0,
+    "reference_black_hole_mass_msun": 100000000.0,
+    "displayed_magnitude_range": [
+      10.0,
+      21.0
+    ]
+  },
+  "source_mass_and_baseline_audit": [
+    {
+      "name": "NGC 1068",
+      "mass_msun": 16600000.0,
+      "mass_error_minus_msun": 100000.0,
+      "mass_error_plus_msun": 100000.0,
+      "mass_reference": "Gallimore et al., revised H2O-maser mass",
+      "single_copy_required_baseline_km": 164.8730862746402,
+      "collective_required_baseline_km": 30.379305626097707,
+      "baseline_reduction_factor": 5.42715124248936
+    },
+    {
+      "name": "NGC 4151",
+      "mass_msun": 45700000.0,
+      "mass_error_minus_msun": 4700000.0,
+      "mass_error_plus_msun": 5700000.0,
+      "mass_reference": "Bentz et al. 2006, reverberation mapping",
+      "single_copy_required_baseline_km": 103.84242242724956,
+      "collective_required_baseline_km": 19.134835552428807,
+      "baseline_reduction_factor": 5.426878226506039
+    },
+    {
+      "name": "NGC 1275",
+      "mass_msun": 1100000000.0,
+      "mass_error_minus_msun": 500000000.0,
+      "mass_error_plus_msun": 900000000.0,
+      "mass_reference": "Riffel et al. 2020, M-sigma estimate",
+      "single_copy_required_baseline_km": 37.533974257186856,
+      "collective_required_baseline_km": 6.917087348027107,
+      "baseline_reduction_factor": 5.426268654521516
+    },
+    {
+      "name": "Mrk 421",
+      "mass_msun": 190546071.79632443,
+      "mass_error_minus_msun": 42635232.97950372,
+      "mass_error_plus_msun": 54924819.772177935,
+      "mass_reference": "Barth et al. 2003, stellar velocity dispersion",
+      "single_copy_required_baseline_km": 451.55624784501657,
+      "collective_required_baseline_km": 83.22139327848221,
+      "baseline_reduction_factor": 5.425963566050646
+    },
+    {
+      "name": "Mrk 501",
+      "mass_msun": 1621810097.3589332,
+      "mass_error_minus_msun": 419545662.74152017,
+      "mass_error_plus_msun": 565951526.5906274,
+      "mass_reference": "Barth et al. 2003, stellar velocity dispersion",
+      "single_copy_required_baseline_km": 87.80226150811421,
+      "collective_required_baseline_km": 16.187005152487963,
+      "baseline_reduction_factor": 5.424243748672613
+    },
+    {
+      "name": "BL Lac",
+      "mass_msun": 169824365.2461746,
+      "mass_error_minus_msun": 84710561.42593683,
+      "mass_error_plus_msun": 169019790.89302883,
+      "mass_reference": "Woo and Urry 2002; 0.30-dex M-sigma scatter",
+      "single_copy_required_baseline_km": 1709.7360966725032,
+      "collective_required_baseline_km": 315.2137737467505,
+      "baseline_reduction_factor": 5.424052624191929
+    },
+    {
+      "name": "3C 273",
+      "mass_msun": 260000000.0,
+      "mass_error_minus_msun": 110000000.0,
+      "mass_error_plus_msun": 110000000.0,
+      "mass_reference": "GRAVITY Collaboration 2018, spatially resolved BLR dynamics",
+      "single_copy_required_baseline_km": 1391.426488643198,
+      "collective_required_baseline_km": 256.4349930575694,
+      "baseline_reduction_factor": 5.426039839776563
+    },
+    {
+      "name": "OJ 287",
+      "mass_msun": 18400000000.0,
+      "mass_error_minus_msun": 184000000.0,
+      "mass_error_plus_msun": 184000000.0,
+      "mass_reference": "Valtonen et al. orbital solution",
+      "single_copy_required_baseline_km": 68.04725983894275,
+      "collective_required_baseline_km": 12.55098175294247,
+      "baseline_reduction_factor": 5.421668294831969
+    },
+    {
+      "name": "PKS 1510-089",
+      "mass_msun": 57100000.0,
+      "mass_error_minus_msun": 5800000.0,
+      "mass_error_plus_msun": 6200000.0,
+      "mass_reference": "Rakshit 2020, reverberation mapping",
+      "single_copy_required_baseline_km": 62016.647178125706,
+      "collective_required_baseline_km": 11498.903803800604,
+      "baseline_reduction_factor": 5.393266022247098
+    },
+    {
+      "name": "3C 279",
+      "mass_msun": 794328234.7242821,
+      "mass_error_minus_msun": 543139591.573324,
+      "mass_error_plus_msun": 1717558196.7852998,
+      "mass_reference": "Nilsson et al. 2009, host luminosity",
+      "single_copy_required_baseline_km": 10431.527708174028,
+      "collective_required_baseline_km": 1958.2437560540502,
+      "baseline_reduction_factor": 5.326981217697856
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "N": 4,
+    "n_s": 2,
+    "effect_count": 16,
+    "probability_sum": 1.0,
+    "minimum_probability": 0.016217339057920097,
+    "full_completeness_fro": 1.7759593445978585e-15,
+    "maximum_projector_gram_fro": 4.440892098500626e-16,
+    "maximum_copy_permutation_commutator_fro": 6.424381581772557e-16,
+    "full_fisher_vs_saved_fro": 5.5511045352038446e-17,
+    "minimum_fisher_eigenvalue": 0.051415674045240466
+  },
+  {
+    "N": 5,
+    "n_s": 2,
+    "effect_count": 25,
+    "probability_sum": 1.0000000000000002,
+    "minimum_probability": 0.010007410995860107,
+    "full_completeness_fro": 2.3048693930008032e-15,
+    "maximum_projector_gram_fro": 4.440892098500626e-16,
+    "maximum_copy_permutation_commutator_fro": 6.546329758776268e-16,
+    "full_fisher_vs_saved_fro": 8.814970395435578e-17,
+    "minimum_fisher_eigenvalue": 0.033175195986252085
+  },
+  {
+    "N": 4,
+    "n_s": 3,
+    "effect_count": 44,
+    "probability_sum": 0.9999999999999999,
+    "minimum_probability": 0.002632555420361069,
+    "full_completeness_fro": 7.788987632848353e-15,
+    "maximum_projector_gram_fro": 1.4062375398860548e-15,
+    "maximum_copy_permutation_commutator_fro": 2.1711516142993502e-15,
+    "full_fisher_vs_saved_fro": 7.118066977728723e-17,
+    "minimum_fisher_eigenvalue": 0.06248466129261017
+  },
+  {
+    "N": 5,
+    "n_s": 3,
+    "effect_count": 85,
+    "probability_sum": 1.0000000000000002,
+    "minimum_probability": 0.0011976095163444976,
+    "full_completeness_fro": 1.2580519883469189e-14,
+    "maximum_projector_gram_fro": 1.4243292917408787e-15,
+    "maximum_copy_permutation_commutator_fro": 2.191700655150837e-15,
+    "full_fisher_vs_saved_fro": 1.6809377780229606e-16,
+    "minimum_fisher_eigenvalue": 0.03801555679265417
+  }
+]

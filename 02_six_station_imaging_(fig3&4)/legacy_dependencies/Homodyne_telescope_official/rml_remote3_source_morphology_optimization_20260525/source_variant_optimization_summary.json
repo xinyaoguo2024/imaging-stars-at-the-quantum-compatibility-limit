@@ -1,0 +1,207 @@
+{
+  "runtime": {
+    "case": "hawaii_top4_remote3_compact_r2_4_9_ngc4151",
+    "observing_days": 30,
+    "n_time_windows": 36,
+    "exposure_s": 600.0,
+    "snr_boost": 1.0,
+    "fiber_loss_db_per_km": 0.2,
+    "mode_false_positive": 0.05,
+    "amp_weight": 0.7,
+    "phase_weight": 2.4,
+    "fit_n_pix": 32,
+    "shown_n_pix": 64
+  },
+  "variants": [
+    {
+      "key": "broad_plume_irregular_blr",
+      "label": "broad plume + irregular BLR",
+      "note": "The narrow jet is replaced by a broad bent plume; the BLR has broad asymmetric sectors."
+    },
+    {
+      "key": "two_arc_diffuse_tail",
+      "label": "two broad BLR arcs + diffuse tail",
+      "note": "The BLR is dominated by two resolved arcs and a diffuse tail rather than a thin bright ridge."
+    },
+    {
+      "key": "patchy_resolved_ring",
+      "label": "patchy resolved BLR ring",
+      "note": "Several broad BLR patches are used; all clumps are wider than the nominal high-resolution beam."
+    }
+  ],
+  "best_priors": {
+    "broad_plume_irregular_blr": {
+      "config": "p0p03_tv0_e0p005",
+      "prior": 0.03,
+      "tv": 0.0,
+      "entropy": 0.005
+    },
+    "two_arc_diffuse_tail": {
+      "config": "p0p15_tv0p06_e0p005",
+      "prior": 0.15,
+      "tv": 0.06,
+      "entropy": 0.005
+    },
+    "patchy_resolved_ring": {
+      "config": "p0p03_tv0p03_e0",
+      "prior": 0.03,
+      "tv": 0.03,
+      "entropy": 0.0
+    }
+  },
+  "final_rows": [
+    {
+      "config": "p0p03_tv0_e0p005",
+      "prior": 0.03,
+      "tv": 0.0,
+      "entropy": 0.005,
+      "strategy": "all",
+      "best_start": "all_dirty",
+      "global_corr": 0.9113992535246573,
+      "blr_corr": 0.8785837584528567,
+      "profile_rmse": 0.18074089258075138,
+      "amp_chi2": 0.9080811485898119,
+      "phase_chi2": 0.9405676242972808,
+      "variant": "broad_plume_irregular_blr",
+      "variant_label": "broad plume + irregular BLR"
+    },
+    {
+      "config": "p0p03_tv0_e0p005",
+      "prior": 0.03,
+      "tv": 0.0,
+      "entropy": 0.005,
+      "strategy": "split",
+      "best_start": "split_dirty",
+      "global_corr": 0.8703057119277492,
+      "blr_corr": 0.7685834660252371,
+      "profile_rmse": 0.394691007029167,
+      "amp_chi2": 0.9126476182199331,
+      "phase_chi2": 0.6588366355687446,
+      "variant": "broad_plume_irregular_blr",
+      "variant_label": "broad plume + irregular BLR"
+    },
+    {
+      "config": "p0p03_tv0_e0p005",
+      "prior": 0.03,
+      "tv": 0.0,
+      "entropy": 0.005,
+      "strategy": "direct",
+      "best_start": "direct_dirty",
+      "global_corr": 0.9069779751293341,
+      "blr_corr": 0.8674714526453905,
+      "profile_rmse": 0.2581765583957766,
+      "amp_chi2": 0.9117013447066834,
+      "phase_chi2": 0.5883446336855271,
+      "variant": "broad_plume_irregular_blr",
+      "variant_label": "broad plume + irregular BLR"
+    },
+    {
+      "config": "p0p15_tv0p06_e0p005",
+      "prior": 0.15,
+      "tv": 0.06,
+      "entropy": 0.005,
+      "strategy": "all",
+      "best_start": "all_dirty",
+      "global_corr": 0.8975827168436137,
+      "blr_corr": 0.8688630894094576,
+      "profile_rmse": 0.13448646689028185,
+      "amp_chi2": 0.9156160431473177,
+      "phase_chi2": 0.9464844971180815,
+      "variant": "two_arc_diffuse_tail",
+      "variant_label": "two broad BLR arcs + diffuse tail"
+    },
+    {
+      "config": "p0p15_tv0p06_e0p005",
+      "prior": 0.15,
+      "tv": 0.06,
+      "entropy": 0.005,
+      "strategy": "split",
+      "best_start": "split_dirty",
+      "global_corr": 0.893050319449668,
+      "blr_corr": 0.84987282103125,
+      "profile_rmse": 0.2191094672083206,
+      "amp_chi2": 0.9206349168406353,
+      "phase_chi2": 0.6693736336676783,
+      "variant": "two_arc_diffuse_tail",
+      "variant_label": "two broad BLR arcs + diffuse tail"
+    },
+    {
+      "config": "p0p15_tv0p06_e0p005",
+      "prior": 0.15,
+      "tv": 0.06,
+      "entropy": 0.005,
+      "strategy": "direct",
+      "best_start": "direct_dirty",
+      "global_corr": 0.8990757012516511,
+      "blr_corr": 0.8711896252917338,
+      "profile_rmse": 0.1554792590007759,
+      "amp_chi2": 0.9190561989098144,
+      "phase_chi2": 0.6027891024088429,
+      "variant": "two_arc_diffuse_tail",
+      "variant_label": "two broad BLR arcs + diffuse tail"
+    },
+    {
+      "config": "p0p03_tv0p03_e0",
+      "prior": 0.03,
+      "tv": 0.03,
+      "entropy": 0.0,
+      "strategy": "all",
+      "best_start": "all_dirty",
+      "global_corr": 0.8868404960601961,
+      "blr_corr": 0.8224661301181194,
+      "profile_rmse": 0.17979543069763018,
+      "amp_chi2": 0.893865912589031,
+      "phase_chi2": 0.9321878705505817,
+      "variant": "patchy_resolved_ring",
+      "variant_label": "patchy resolved BLR ring"
+    },
+    {
+      "config": "p0p03_tv0p03_e0",
+      "prior": 0.03,
+      "tv": 0.03,
+      "entropy": 0.0,
+      "strategy": "split",
+      "best_start": "split_dirty",
+      "global_corr": 0.8727620365917093,
+      "blr_corr": 0.7883363525954147,
+      "profile_rmse": 0.21789073885579974,
+      "amp_chi2": 0.8975500085525838,
+      "phase_chi2": 0.6939181360088169,
+      "variant": "patchy_resolved_ring",
+      "variant_label": "patchy resolved BLR ring"
+    },
+    {
+      "config": "p0p03_tv0p03_e0",
+      "prior": 0.03,
+      "tv": 0.03,
+      "entropy": 0.0,
+      "strategy": "direct",
+      "best_start": "direct_dirty",
+      "global_corr": 0.8793641019000139,
+      "blr_corr": 0.7925375915184085,
+      "profile_rmse": 0.2077143259403369,
+      "amp_chi2": 0.8918431597975873,
+      "phase_chi2": 0.6171451271399326,
+      "variant": "patchy_resolved_ring",
+      "variant_label": "patchy resolved BLR ring"
+    }
+  ],
+  "figures": {
+    "broad_plume_irregular_blr": {
+      "png": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/broad_plume_irregular_blr_optimized_strategy_comparison.png",
+      "pdf": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/broad_plume_irregular_blr_optimized_strategy_comparison.pdf"
+    },
+    "two_arc_diffuse_tail": {
+      "png": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/two_arc_diffuse_tail_optimized_strategy_comparison.png",
+      "pdf": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/two_arc_diffuse_tail_optimized_strategy_comparison.pdf"
+    },
+    "patchy_resolved_ring": {
+      "png": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/patchy_resolved_ring_optimized_strategy_comparison.png",
+      "pdf": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/patchy_resolved_ring_optimized_strategy_comparison.pdf"
+    },
+    "summary_png": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/source_variant_metric_summary.png",
+    "summary_pdf": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/source_variant_metric_summary.pdf",
+    "scan_csv": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/source_variant_prior_scan_metrics.csv",
+    "final_csv": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/rml_remote3_source_morphology_optimization_20260525/source_variant_optimized_strategy_metrics.csv"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "N": 4,
+  "n_s": 3,
+  "g": 0.5,
+  "receiver_class": "q=2 overcomplete rank-one Parseval-frame POVM in each copy-permutation Schur block",
+  "block_dimensions": [
+    20,
+    20,
+    4
+  ],
+  "block_multiplicities": [
+    1,
+    2,
+    1
+  ],
+  "block_outcomes": [
+    40,
+    40,
+    8
+  ],
+  "number_of_reported_outcomes": 88,
+  "risk": 76.16843953777916,
+  "A_risk_gain": 1.8905468048689211,
+  "SNR_gain": 1.374971565112865,
+  "edge_directional_Fisher_gains": [
+    1.889372705359068,
+    1.891007959995805,
+    1.8861834598760387,
+    1.89351105412838,
+    1.8934299919731692,
+    1.8897959229051187
+  ],
+  "edge_directional_Fisher_gain_mean": 1.89055018237293,
+  "edge_directional_Fisher_gain_min": 1.8861834598760387,
+  "edge_directional_Fisher_gain_max": 1.89351105412838,
+  "Fisher_mode_gains": [
+    1.564465902020524,
+    1.5698032557161627,
+    1.5788318263165435,
+    2.3660324812366005,
+    2.3691956651616097,
+    2.3846180249766835
+  ],
+  "Fisher_mode_gain_mean": 1.9721578592380207,
+  "minimum_outcome_probability": 0.0009072429164186005,
+  "probability_sum": 1.0,
+  "completeness_error": 2.3117418127418072e-15,
+  "Fisher_reconstruction_error": 3.9123035783150443e-17,
+  "maximum_QFI_normalized_eigenvalue": 0.789417964272432,
+  "final_gradient_norm": 0.0004515024236026545,
+  "optimizer_records": [
+    {
+      "restart": "refine_existing",
+      "initialization": "saved_q2_povm",
+      "initial_risk": 76.18114285499273,
+      "initial_gradient_norm": 0.004186933573210222,
+      "risk": 76.16843953777916,
+      "gradient_norm": 0.0004515024236026545,
+      "steps": 100000
+    }
+  ],
+  "caveat": "Best validated local optimum in the q=2 Schur-Parseval-frame class; not a global unrestricted-POVM certificate."
+}

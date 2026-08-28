@@ -1,0 +1,151 @@
+{
+  "definition": {
+    "loop_set": [
+      "S1-S2-S3",
+      "S1-S2-S4",
+      "S1-S2-S5",
+      "S1-S3-S4",
+      "S1-S3-S6",
+      "S2-S4-S5",
+      "S2-S5-S6",
+      "S3-S4-S6",
+      "S3-S5-S6",
+      "S4-S5-S6"
+    ],
+    "direct_model": "selected balanced 10 triangle raw edge Fisher branches with omega_l=0.2, assembled as raw J_e and Schur-complemented once globally",
+    "near_model": "S1-S3 core raw direct block plus pairwise edge-first readout on all non-core-core baselines, optimized against the fixed raw-direct target",
+    "snr_gain": "sigma_edge_uniform / sigma_strategy for each displayed loop",
+    "exposure_s": 600.0,
+    "n_samples": 360
+  },
+  "direct_station_weight_sums": {
+    "S1": 1.0,
+    "S2": 1.0,
+    "S3": 1.0,
+    "S4": 1.0,
+    "S5": 1.0,
+    "S6": 1.0
+  },
+  "summary": {
+    "rawdirect_gain_vs_edge": {
+      "min": 1.467868953176819,
+      "mean": 1.630445986425622,
+      "median": 1.6442371947242471,
+      "max": 1.7642561563837107
+    },
+    "rawdirect_per_sample_gain_vs_edge": {
+      "min": 1.4674850882813635,
+      "mean": 1.6234099284220682,
+      "median": 1.6323027559640415,
+      "max": 1.7586752219017852
+    },
+    "near_gain_vs_edge": {
+      "min": 1.0006895903167576,
+      "mean": 1.109998364576165,
+      "median": 1.1105680567969982,
+      "max": 1.192800211946113
+    },
+    "near_over_rawdirect_snr_ratio": {
+      "min": 0.6707933333954073,
+      "mean": 0.6807297601163208,
+      "median": 0.6709835187839943,
+      "max": 0.7264606224241205
+    }
+  },
+  "near_info": {
+    "objective": "maximize near/direct on fixed raw-Je omega_l=0.2 target, rejecting candidates with any selected-loop near/edge below one",
+    "score": -0.4069144270461282,
+    "best_start": "split_coord_2",
+    "alpha_core": [
+      0.19655073270596052,
+      0.16474490795273175,
+      0.06647034319206593
+    ],
+    "station_total_budgets": {
+      "S1": 1.0,
+      "S2": 1.0,
+      "S3": 1.0,
+      "S4": 1.0,
+      "S5": 1.0,
+      "S6": 1.0
+    },
+    "counts": {
+      "evaluations": 5467,
+      "core_recomputes": 187
+    },
+    "near_gain_vs_edge": {
+      "min": 1.0006895903167576,
+      "mean": 1.109998364576165,
+      "median": 1.1105680567969982,
+      "max": 1.192800211946113
+    },
+    "near_snr_ratio_vs_rawdirect": {
+      "min": 0.6707933333954073,
+      "mean": 0.6807297601163208,
+      "median": 0.6709835187839943,
+      "max": 0.7264606224241205
+    },
+    "n_near_below_edge": 0,
+    "n_near_below_rawdirect": 10
+  },
+  "near_alpha_core": [
+    0.19655073270596052,
+    0.16474490795273175,
+    0.06647034319206593
+  ],
+  "near_split_matrix": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.49402210094898863,
+      0.1799958035954636,
+      0.1294313627495872
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.41728600314514186,
+      0.3485630410448662,
+      0.06940604785726026
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.4245813525891796,
+      0.05130658191680681,
+      0.4576417223019477
+    ],
+    [
+      0.24423152609255847,
+      0.23232509106750543,
+      0.20401579141148776,
+      0.0,
+      0.16130988046889594,
+      0.15811771095955238
+    ],
+    [
+      0.18180123647460028,
+      0.26981444289367923,
+      0.031049714681991174,
+      0.2265136826899545,
+      0.0,
+      0.2908209232597749
+    ],
+    [
+      0.14859217911786304,
+      0.06783020845673941,
+      0.25619085682400966,
+      0.20976946006390704,
+      0.3176172955374808,
+      0.0
+    ]
+  ],
+  "outputs": {
+    "loop_gains_csv": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/results/rawje_balanced10_omega02_near_coreedge_loop_gains.csv",
+    "figure_pdf": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/figures/rawje_balanced10_omega02_near_coreedge.pdf",
+    "figure_png": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/figures/rawje_balanced10_omega02_near_coreedge.png"
+  }
+}

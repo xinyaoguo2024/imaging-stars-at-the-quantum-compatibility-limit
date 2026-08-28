@@ -1,0 +1,72 @@
+{
+  "summary": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/fig2_eff002_no_core_prior_0819/results/paired_povm_100ms_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_runs/100ms/seed_20260529/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260529_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+  "observed_halpha_nm": 658.4789159999999,
+  "audited_centers_nm": [
+    654.9809157525126,
+    664.9812027418519
+  ],
+  "criterion": "A collective H-alpha result is marked convergence-suspect only when its BLR or global correlation is more than 0.03 below both single-copy results and its componentwise residual score is abnormal.",
+  "rerun_recommended": false,
+  "rows": [
+    {
+      "lambda_nm": 654.9809157525126,
+      "strategy": "edge_uniform",
+      "amp_chi2": 0.7424718865339741,
+      "phase_chi2": 0.9700657328291495,
+      "blr_corr": 0.6212506035869487,
+      "global_corr": 0.795218211945022,
+      "target_score": 0.1352513427782455,
+      "convergence_suspect": false
+    },
+    {
+      "lambda_nm": 654.9809157525126,
+      "strategy": "optimal_singlecopy",
+      "amp_chi2": 0.7335761231330602,
+      "phase_chi2": 0.9854789551955531,
+      "blr_corr": 0.5602126139765811,
+      "global_corr": 0.7455612084356326,
+      "target_score": 0.14789142243652018,
+      "convergence_suspect": false
+    },
+    {
+      "lambda_nm": 654.9809157525126,
+      "strategy": "promoted_singlecopy",
+      "amp_chi2": 0.7873945127721802,
+      "phase_chi2": 0.9174495933672675,
+      "blr_corr": 0.7417673704518054,
+      "global_corr": 0.8290741980566565,
+      "target_score": 0.0765069397922759,
+      "convergence_suspect": false
+    },
+    {
+      "lambda_nm": 664.9812027418519,
+      "strategy": "edge_uniform",
+      "amp_chi2": 0.8199730278430174,
+      "phase_chi2": 0.8811771391446297,
+      "blr_corr": 0.4772794858570276,
+      "global_corr": 0.7492944304748029,
+      "target_score": 0.036022322239203236,
+      "convergence_suspect": false
+    },
+    {
+      "lambda_nm": 664.9812027418519,
+      "strategy": "optimal_singlecopy",
+      "amp_chi2": 0.8271081922309947,
+      "phase_chi2": 0.8737405714850667,
+      "blr_corr": 0.5787115394396642,
+      "global_corr": 0.8077882714623186,
+      "target_score": 0.02754715314428212,
+      "convergence_suspect": false
+    },
+    {
+      "lambda_nm": 664.9812027418519,
+      "strategy": "promoted_singlecopy",
+      "amp_chi2": 0.8249118462182409,
+      "phase_chi2": 0.881589143990933,
+      "blr_corr": 0.48453855235815924,
+      "global_corr": 0.6975409441072301,
+      "target_score": 0.036489774853593754,
+      "convergence_suspect": false
+    }
+  ]
+}

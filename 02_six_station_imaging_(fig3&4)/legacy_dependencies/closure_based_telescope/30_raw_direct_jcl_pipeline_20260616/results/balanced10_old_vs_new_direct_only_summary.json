@@ -1,0 +1,44 @@
+{
+  "definition": {
+    "snr_gain": "sigma_edge_uniform / sigma_direct for each balanced-10 loop",
+    "old_3port_direct": "direct_optimized_schedule from 18_balanced_10loop_independent_set_20260611",
+    "new_3port_direct": "corrected raw Je generalized station-budget direct benchmark with optimized a_{loop,station}",
+    "loop_set": [
+      "S1-S2-S3",
+      "S1-S2-S4",
+      "S1-S2-S5",
+      "S1-S3-S4",
+      "S1-S3-S6",
+      "S2-S4-S5",
+      "S2-S5-S6",
+      "S3-S4-S6",
+      "S3-S5-S6",
+      "S4-S5-S6"
+    ]
+  },
+  "summary": {
+    "old_3port_direct_gain_vs_edge": {
+      "min": 1.2112182127920084,
+      "mean": 1.2657068827332938,
+      "median": 1.2348022012752549,
+      "max": 1.4027337769266373
+    },
+    "new_generalized_3port_direct_gain_vs_edge": {
+      "min": 1.5812111188439868,
+      "mean": 1.652714836245807,
+      "median": 1.6337340768731408,
+      "max": 1.8438963837921354
+    },
+    "new_over_old_snr": {
+      "min": 1.2127591394614285,
+      "mean": 1.3073563911926092,
+      "median": 1.3009098520504963,
+      "max": 1.4445544473249483
+    }
+  },
+  "outputs": {
+    "loop_gains_csv": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/results/balanced10_old_vs_new_direct_only_loop_gains.csv",
+    "figure_pdf": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/figures/balanced10_old_vs_new_direct_only.pdf",
+    "figure_png": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/30_raw_direct_jcl_pipeline_20260616/figures/balanced10_old_vs_new_direct_only.png"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "definition": "Locally A-optimal overcomplete rank-one POVM search, with every d-dimensional Schur block represented by a d x (q d) row-isometry.",
+  "working_point": {
+    "band_index": 3,
+    "time_index": 18,
+    "lambda_center_nm": 634.9803146555017,
+    "hour_angle_rad": 3.6361026082686072e-06,
+    "one_photon_occupation": 1.0200420404393684e-08,
+    "rho_eigenvalues": [
+      0.10909273334731034,
+      0.12750576215750892,
+      0.12901962755993113,
+      0.13541623831930685,
+      0.14120957201386822,
+      0.35775606660207465
+    ],
+    "n_station": 6,
+    "n_edge_amplitude": 15,
+    "n_closure_phase": 10,
+    "n_piston_nuisance": 5,
+    "singlecopy_povm_hash": "b27348f9b52a0198d05c4004407d9a8d1123b1add6de3ab810f97eb94b4c349a",
+    "singlecopy_effect_count": 303,
+    "singlecopy_lift_kappa": 0.15947747399618023,
+    "existing_coupled_area_fraction": 1.0,
+    "remote_diameter_m": 6.0,
+    "photon_collection_efficiency": 0.02
+  },
+  "copies": 3,
+  "redundancy": 2,
+  "block_dimensions": [
+    56,
+    70,
+    20
+  ],
+  "block_multiplicities": [
+    1,
+    2,
+    1
+  ],
+  "block_outcomes": [
+    112,
+    140,
+    40
+  ],
+  "pvm_risk": 101.71578792270448,
+  "povm_risk": 88.94272296668271,
+  "singlecopy_risk": 217.27879131128353,
+  "qlan_risk": 27.213331252123787,
+  "povm_over_pvm_risk": 0.8744239688166381,
+  "fisher_gain_povm_over_pvm": 1.1436100057427572,
+  "aggregate_fisher_gain_povm_over_single": 2.44290689630308,
+  "aggregate_snr_gain_povm_over_single": 1.5629801330481075,
+  "global_fisher_factor_povm_over_qlan": 0.3059646741680902,
+  "completeness_error": 6.575382659024456e-15,
+  "probability_sum": 0.9999999999999996,
+  "gradient_check": {
+    "analytic_directional_derivative": -3.9863141145735144,
+    "numerical_directional_derivative": -3.9863141054752305,
+    "relative_error": 2.2823800740613483e-09
+  },
+  "optimizer_records": [
+    {
+      "restart": -1,
+      "objective": 101.71578792270452,
+      "gradient_norm": 1.0893144874163336,
+      "steps": 0,
+      "initialization": "exact_split_pvm"
+    },
+    {
+      "restart": 0,
+      "objective": 88.96158210920515,
+      "gradient_norm": 0.8679701070686474,
+      "steps": 1600,
+      "initialization": "perturbed_split_0.035"
+    },
+    {
+      "restart": 1,
+      "objective": 88.94272296668271,
+      "gradient_norm": 0.11312518532425699,
+      "steps": 1600,
+      "initialization": "perturbed_split_0.046667"
+    },
+    {
+      "restart": 2,
+      "objective": 89.03436206532241,
+      "gradient_norm": 0.9903565851286543,
+      "steps": 1600,
+      "initialization": "perturbed_split_0.058333"
+    },
+    {
+      "restart": 3,
+      "objective": 89.01935216179557,
+      "gradient_norm": 0.7888144969808439,
+      "steps": 1600,
+      "initialization": "random_tight_frame"
+    }
+  ],
+  "caveat": "This is a local nonconvex rank-one POVM optimum in a fixed copy-permutation block-diagonal class, not a global finite-copy optimality certificate and not yet a strict score-preserving lift."
+}

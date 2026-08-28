@@ -1,0 +1,110 @@
+{
+  "N": 4,
+  "n_s": 3,
+  "g": 0.5,
+  "raw_hilbert_dimension": 64,
+  "edge_phase_dimension": 6,
+  "edges_one_indexed": [
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "local_coordinate": "h=sqrt(n_s)*(phi-phi0)",
+  "schur_blocks": [
+    {
+      "label": "symmetric",
+      "reduced_dimension": 20,
+      "multiplicity": 1,
+      "effect_rank": 1
+    },
+    {
+      "label": "mixed",
+      "reduced_dimension": 20,
+      "multiplicity": 2,
+      "effect_rank": 2
+    },
+    {
+      "label": "antisymmetric",
+      "reduced_dimension": 4,
+      "multiplicity": 1,
+      "effect_rank": 1
+    }
+  ],
+  "number_of_joint_outcomes": 44,
+  "one_copy_uniform_edge_fisher_diagonal": 0.041666666666666664,
+  "repetitive_fisher_eigenvalues": [
+    0.041666666666666664,
+    0.041666666666666664,
+    0.041666666666666664,
+    0.041666666666666664,
+    0.041666666666666664,
+    0.041666666666666664
+  ],
+  "repetitive_A_risk": 144.0,
+  "joint_fisher_eigenvalues": [
+    0.06248466129261012,
+    0.06290787614467666,
+    0.06341306907728608,
+    0.09208261692429666,
+    0.09399025224731243,
+    0.09480273113933804
+  ],
+  "qfi_eigenvalues": [
+    0.08333333333333331,
+    0.0833333333333334,
+    0.08333333333333343,
+    0.25,
+    0.25000000000000006,
+    0.25000000000000017
+  ],
+  "qfi_A_risk": 47.99999999999999,
+  "joint_to_qfi_generalized_eigenvalues": [
+    0.3683040179348312,
+    0.37590651297058475,
+    0.37919107967975474,
+    0.7498368948079026,
+    0.7549340852266717,
+    0.761100463103426
+  ],
+  "maximum_joint_to_qfi_ratio": 0.761100463103426,
+  "joint_A_risk": 79.71724183397586,
+  "A_risk_gain": 1.806384625046404,
+  "A_risk_SNR_gain": 1.3440180895532634,
+  "minimum_direction_Fisher_gain": 1.499631871022643,
+  "maximum_direction_Fisher_gain": 2.2752655473441132,
+  "arithmetic_mean_Fisher_gain": 1.8787248273020802,
+  "harmonic_mean_Fisher_gain": 1.806384625046404,
+  "minimum_outcome_probability": 0.002632555420361071,
+  "probability_sum": 0.9999999999999999,
+  "fisher_reconstruction_fro": 5.60872805893256e-17,
+  "reduced_completeness_fro": 2.660040272985441e-15,
+  "reduced_projector_orthogonality_fro": 2.6159293701352474e-15,
+  "best_riemannian_gradient_norm": 0.0008797607535031374,
+  "restart_objective_min": 79.71724183397586,
+  "restart_objective_median": 79.85175685502128,
+  "restart_objective_max": 80.07339903921851,
+  "restart_objective_std": 0.09491325227278834,
+  "restart_gradient_median": 0.023603625140282056,
+  "local_nonconvex_optimum_only": true
+}

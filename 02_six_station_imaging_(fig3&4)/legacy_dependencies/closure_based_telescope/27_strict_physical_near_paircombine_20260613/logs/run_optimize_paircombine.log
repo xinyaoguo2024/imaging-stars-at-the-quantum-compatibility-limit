@@ -1,0 +1,2 @@
+[    3.52s] reproduced folder18 columns: {'current_near_max_relative_error': 0.0, 'remote_star_independent_max_relative_error': 0.0}
+[    5.12s] new best -0.014185386 from checkpoint:checkpoint_worst-ratio.json: gain min/mean/max=1.2015/1.2595/1.3912

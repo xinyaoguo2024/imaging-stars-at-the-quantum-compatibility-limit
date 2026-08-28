@@ -1,0 +1,956 @@
+{
+  "schema_version": 2,
+  "generated_utc": "2026-08-24T10:10:51.191844+00:00",
+  "analysis": "paired main-text Fig. 4 receiver statistics",
+  "metadata": {
+    "dataset": "single paired 100-ms ensemble; no legacy or modular inputs",
+    "n_station": 6,
+    "n_seed": 12,
+    "seeds": [
+      20260529,
+      20260530,
+      20260531,
+      20260532,
+      20260533,
+      20260534,
+      20260535,
+      20260536,
+      20260537,
+      20260538,
+      20260539,
+      20260540
+    ],
+    "strategies": [
+      "edge_uniform",
+      "optimal_singlecopy",
+      "promoted_singlecopy"
+    ],
+    "phase_parameter_space": "closure subspace only",
+    "phase_dimension_C": 10,
+    "amplitude_parameter_space": "complete edge space",
+    "amplitude_dimension_E": 15,
+    "coherent_block_size_ns": 3,
+    "promotion_model": "finite_ns3_povm_q2_per_band_near_transit",
+    "finite_block_interpretation": "finite-copy covariance supplied by the configured receiver cache; QLAN retained only as an asymptotic loop-gain reference",
+    "paired_noise_draws": true,
+    "effective_exposure_s": 0.1,
+    "existing_coupled_area_fraction": 1.0,
+    "remote_diameter_m": 6.0,
+    "photon_collection_efficiency": 0.02,
+    "amplitude_branch_fraction": 0.5,
+    "phase_branch_fraction": 0.5,
+    "reconstruction_selection": "one fixed Gaussian/TV/entropy regularization, with no translation-gauge or morphology-specific core prior, plus one receiver-blind, data-only componentwise target chi-square of 0.85 with a 0.75--1.00 candidate window for every seed and receiver",
+    "bootstrap": {
+      "method": "paired nonparametric percentile bootstrap of the mean",
+      "confidence_level": 0.95,
+      "rng_seed": 20260713,
+      "n_resamples": 50000
+    },
+    "receiver_cache_npz": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/fig2_eff002_no_core_prior_0819/receiver_cache_eff002_remote6_finite_perband_100ms_ns3_v1.npz",
+    "mixed_likelihood": "full (E+C)x(E+C) covariance including amplitude-phase cross block"
+  },
+  "input_summary_files": [
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260529/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260529_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260530/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260530_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260531/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260531_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260532/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260532_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260533/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260533_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260534/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260534_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260535/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260535_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260536/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260536_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260537/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260537_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260538/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260538_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260539/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260539_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json",
+    "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results_12seed_raw/100ms/seed_20260540/rml_outputs/broad_plume_split_objective_nmode_rml_paired_povm_100ms_seed20260540_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_summary.json"
+  ],
+  "strategy_statistics": {
+    "blr_corr": {
+      "edge_uniform": {
+        "n_seed": 12,
+        "mean": 0.6863622897642722,
+        "sample_std": 0.025474311078941388,
+        "sem": 0.007353800179423538,
+        "bootstrap_ci95_lower": 0.6730472428253951,
+        "bootstrap_ci95_upper": 0.7007172522572933,
+        "min": 0.6495582694376079,
+        "max": 0.7396372523193568
+      },
+      "optimal_singlecopy": {
+        "n_seed": 12,
+        "mean": 0.7259868740113228,
+        "sample_std": 0.024597220134229762,
+        "sem": 0.007100605832907019,
+        "bootstrap_ci95_lower": 0.7130352908665764,
+        "bootstrap_ci95_upper": 0.7397741081774211,
+        "min": 0.6800225244298305,
+        "max": 0.7799907114765995
+      },
+      "promoted_singlecopy": {
+        "n_seed": 12,
+        "mean": 0.8096854665702233,
+        "sample_std": 0.013297340213869692,
+        "sem": 0.0038386114759918514,
+        "bootstrap_ci95_lower": 0.8023247028453415,
+        "bootstrap_ci95_upper": 0.8166210752254472,
+        "min": 0.7859827261788379,
+        "max": 0.8295063943511712
+      }
+    },
+    "global_corr": {
+      "edge_uniform": {
+        "n_seed": 12,
+        "mean": 0.9052404400837806,
+        "sample_std": 0.011314453791542915,
+        "sem": 0.003266201471140442,
+        "bootstrap_ci95_lower": 0.89920120746273,
+        "bootstrap_ci95_upper": 0.9114257949322431,
+        "min": 0.8874225063194405,
+        "max": 0.9229414185689093
+      },
+      "optimal_singlecopy": {
+        "n_seed": 12,
+        "mean": 0.9135682506582201,
+        "sample_std": 0.00978609467559154,
+        "sem": 0.0028250021976339696,
+        "bootstrap_ci95_lower": 0.9081381427881976,
+        "bootstrap_ci95_upper": 0.9187182607524534,
+        "min": 0.8966962122647675,
+        "max": 0.9241818575229657
+      },
+      "promoted_singlecopy": {
+        "n_seed": 12,
+        "mean": 0.9380322584658893,
+        "sample_std": 0.0073576334584761465,
+        "sem": 0.0021239658289249003,
+        "bootstrap_ci95_lower": 0.9338867185048934,
+        "bootstrap_ci95_upper": 0.9417762640916806,
+        "min": 0.923567672721823,
+        "max": 0.9462857213251452
+      }
+    }
+  },
+  "paired_difference_statistics": {
+    "blr_corr": {
+      "optimal_minus_edge": {
+        "definition": "optimal single-copy minus uniform edge-first",
+        "minuend": "optimal_singlecopy",
+        "subtrahend": "edge_uniform",
+        "seedwise_values": [
+          0.01288143585367929,
+          0.033205753953951644,
+          0.0867395098120538,
+          0.002347807046798156,
+          0.07442255027479006,
+          0.030455620429185926,
+          0.06102897804923091,
+          0.048933963458791196,
+          0.02099932621395062,
+          0.02469445027109607,
+          0.040353459157242644,
+          0.0394321564438368
+        ],
+        "n_seed": 12,
+        "mean": 0.03962458424705059,
+        "sample_std": 0.024819219229342892,
+        "sem": 0.007164691451568728,
+        "bootstrap_ci95_lower": 0.026772561876688142,
+        "bootstrap_ci95_upper": 0.053499735040661224,
+        "min": 0.002347807046798156,
+        "max": 0.0867395098120538
+      },
+      "promoted_minus_single": {
+        "definition": "joint POVM minus optimal single-copy",
+        "minuend": "promoted_singlecopy",
+        "subtrahend": "optimal_singlecopy",
+        "seedwise_values": [
+          0.0841191391260937,
+          0.07653443816648853,
+          0.0478629486838732,
+          0.11484538709622905,
+          0.08834130951448993,
+          0.10335176460783213,
+          0.07513051906194268,
+          0.07112274417279763,
+          0.12644010527615257,
+          0.0980737941912988,
+          0.049515682874571754,
+          0.06904527793503723
+        ],
+        "n_seed": 12,
+        "mean": 0.0836985925589006,
+        "sample_std": 0.024048924117193806,
+        "sem": 0.006942326406391364,
+        "bootstrap_ci95_lower": 0.07083629090671906,
+        "bootstrap_ci95_upper": 0.09679995367941109,
+        "min": 0.0478629486838732,
+        "max": 0.12644010527615257
+      },
+      "promoted_minus_edge": {
+        "definition": "joint POVM minus uniform edge-first",
+        "minuend": "promoted_singlecopy",
+        "subtrahend": "edge_uniform",
+        "seedwise_values": [
+          0.09700057497977299,
+          0.10974019212044017,
+          0.134602458495927,
+          0.1171931941430272,
+          0.16276385978927999,
+          0.13380738503701806,
+          0.1361594971111736,
+          0.12005670763158882,
+          0.1474394314901032,
+          0.12276824446239487,
+          0.0898691420318144,
+          0.10847743437887403
+        ],
+        "n_seed": 12,
+        "mean": 0.12332317680595122,
+        "sample_std": 0.020899266972360834,
+        "sem": 0.006033098706179191,
+        "bootstrap_ci95_lower": 0.11206499021201481,
+        "bootstrap_ci95_upper": 0.1348452248982538,
+        "min": 0.0898691420318144,
+        "max": 0.16276385978927999
+      }
+    },
+    "global_corr": {
+      "optimal_minus_edge": {
+        "definition": "optimal single-copy minus uniform edge-first",
+        "minuend": "optimal_singlecopy",
+        "subtrahend": "edge_uniform",
+        "seedwise_values": [
+          0.011756445383609093,
+          0.01124268208393242,
+          0.013316453939411499,
+          -0.0024295756652783496,
+          0.027924362792150048,
+          -0.02248822601786038,
+          0.03638663324008484,
+          -0.0058160239321232154,
+          -0.008266555135602038,
+          0.0015701516314839958,
+          0.024535296714294552,
+          0.012202081859173042
+        ],
+        "n_seed": 12,
+        "mean": 0.008327810574439626,
+        "sample_std": 0.016734803148432516,
+        "sem": 0.004830921551291455,
+        "bootstrap_ci95_lower": -0.0007163799463644668,
+        "bootstrap_ci95_upper": 0.01736148353136645,
+        "min": -0.02248822601786038,
+        "max": 0.03638663324008484
+      },
+      "promoted_minus_single": {
+        "definition": "joint POVM minus optimal single-copy",
+        "minuend": "promoted_singlecopy",
+        "subtrahend": "optimal_singlecopy",
+        "seedwise_values": [
+          0.002484687550943221,
+          0.027761224143424634,
+          0.011938676515976243,
+          0.037213284756968945,
+          0.02364671727140999,
+          0.04583252877409627,
+          0.016910091409254036,
+          0.030945778762982767,
+          0.04654398028233531,
+          0.01137932206895087,
+          0.014147841359281488,
+          0.024763960796407636
+        ],
+        "n_seed": 12,
+        "mean": 0.024464007807669285,
+        "sample_std": 0.01393163257529463,
+        "sem": 0.004021715908798657,
+        "bootstrap_ci95_lower": 0.017103492197050194,
+        "bootstrap_ci95_upper": 0.03214632305806716,
+        "min": 0.002484687550943221,
+        "max": 0.04654398028233531
+      },
+      "promoted_minus_edge": {
+        "definition": "joint POVM minus uniform edge-first",
+        "minuend": "promoted_singlecopy",
+        "subtrahend": "edge_uniform",
+        "seedwise_values": [
+          0.014241132934552314,
+          0.039003906227357055,
+          0.025255130455387742,
+          0.034783709091690596,
+          0.05157108006356004,
+          0.02334430275623589,
+          0.05329672464933888,
+          0.025129754830859552,
+          0.03827742514673327,
+          0.012949473700434866,
+          0.03868313807357604,
+          0.03696604265558068
+        ],
+        "n_seed": 12,
+        "mean": 0.03279181838210891,
+        "sample_std": 0.012935167705285725,
+        "sem": 0.003734061278329834,
+        "bootstrap_ci95_lower": 0.02580918793464415,
+        "bootstrap_ci95_upper": 0.03978241039886004,
+        "min": 0.012949473700434866,
+        "max": 0.05329672464933888
+      }
+    }
+  },
+  "component_chi2_statistics": {
+    "edge_uniform": {
+      "amp_chi2": {
+        "mean": 0.8344669955075908,
+        "sem": 0.0052820916239854935,
+        "sample_std": 0.018297702125953753
+      },
+      "phase_chi2": {
+        "mean": 0.9178231620367389,
+        "sem": 0.005986791634709695,
+        "sample_std": 0.020738854571291054
+      }
+    },
+    "optimal_singlecopy": {
+      "amp_chi2": {
+        "mean": 0.8503603151599844,
+        "sem": 0.005149759877242604,
+        "sample_std": 0.01783929150832771
+      },
+      "phase_chi2": {
+        "mean": 0.921553333031186,
+        "sem": 0.006607898987848082,
+        "sample_std": 0.022890433556471673
+      }
+    },
+    "promoted_singlecopy": {
+      "amp_chi2": {
+        "mean": 0.8708526554788389,
+        "sem": 0.00495279289892008,
+        "sample_std": 0.01715697788059185
+      },
+      "phase_chi2": {
+        "mean": 0.8854507020187637,
+        "sem": 0.006182279620517178,
+        "sample_std": 0.02141604481866678
+      }
+    }
+  },
+  "component_chi2_receiver_spreads": {
+    "amp_chi2": {
+      "minimum_mean": 0.8344669955075908,
+      "maximum_mean": 0.8708526554788389,
+      "max_to_min_ratio": 1.0436034740344828
+    },
+    "phase_chi2": {
+      "minimum_mean": 0.8854507020187637,
+      "maximum_mean": 0.921553333031186,
+      "max_to_min_ratio": 1.0407731688846267
+    }
+  },
+  "per_loop_snr_gain_statistics": {
+    "optimal_vs_edge": {
+      "definition": "local SNR gain from reciprocal nuisance-marginalized loop variance",
+      "aggregation": "geometric mean over 10 wavelength bins x 36 epochs; 5--95% sample quantiles",
+      "per_loop": [
+        {
+          "loop": "1-2-3",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.5043173509560372,
+          "arithmetic_mean": 1.5099151723410504,
+          "median": 1.5198249065424079,
+          "quantile_05": 1.2618673216498095,
+          "quantile_95": 1.694633889302935,
+          "minimum": 1.2031088277723676,
+          "maximum": 1.7722568148500824
+        },
+        {
+          "loop": "1-2-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.3916753698541093,
+          "arithmetic_mean": 1.3945418793458413,
+          "median": 1.3988743475536298,
+          "quantile_05": 1.2707213730321405,
+          "quantile_95": 1.515300033256326,
+          "minimum": 0.8409236145195829,
+          "maximum": 1.6073866755253616
+        },
+        {
+          "loop": "1-2-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.3789589144336125,
+          "arithmetic_mean": 1.379443650963643,
+          "median": 1.3756643421068842,
+          "quantile_05": 1.332563294743435,
+          "quantile_95": 1.4495550466938576,
+          "minimum": 1.2664844113273284,
+          "maximum": 1.483511019735925
+        },
+        {
+          "loop": "1-3-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.2960685124174238,
+          "arithmetic_mean": 1.2998800898991463,
+          "median": 1.3224778646160473,
+          "quantile_05": 1.1056928587425798,
+          "quantile_95": 1.431074664951853,
+          "minimum": 0.9783115546568982,
+          "maximum": 1.4933358946999864
+        },
+        {
+          "loop": "1-3-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.2610930657330337,
+          "arithmetic_mean": 1.2635564306360452,
+          "median": 1.2789803531462587,
+          "quantile_05": 1.0870140486615947,
+          "quantile_95": 1.354032033519337,
+          "minimum": 1.030074270450914,
+          "maximum": 1.4076771591291173
+        },
+        {
+          "loop": "2-4-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.0896807297967794,
+          "arithmetic_mean": 1.0909279361780015,
+          "median": 1.0969156966651088,
+          "quantile_05": 0.9908126255733625,
+          "quantile_95": 1.1717509892695248,
+          "minimum": 0.9262507629506654,
+          "maximum": 1.229987111871123
+        },
+        {
+          "loop": "2-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.048714278891675,
+          "arithmetic_mean": 1.0492468215643378,
+          "median": 1.0610546342077933,
+          "quantile_05": 0.9771731155152664,
+          "quantile_95": 1.0788723521964765,
+          "minimum": 0.9253093892225281,
+          "maximum": 1.0968794935769788
+        },
+        {
+          "loop": "3-4-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.0683102665435162,
+          "arithmetic_mean": 1.0688587568167924,
+          "median": 1.0751705023644371,
+          "quantile_05": 1.004435684865043,
+          "quantile_95": 1.108813547640135,
+          "minimum": 0.943411295325189,
+          "maximum": 1.1638980971106823
+        },
+        {
+          "loop": "3-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.049414284831691,
+          "arithmetic_mean": 1.0497938528536008,
+          "median": 1.059041328448606,
+          "quantile_05": 0.9884021186049926,
+          "quantile_95": 1.0779215940941198,
+          "minimum": 0.9470376929311181,
+          "maximum": 1.0960236045418097
+        },
+        {
+          "loop": "4-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.0393776451573644,
+          "arithmetic_mean": 1.039853276317684,
+          "median": 1.050319783318538,
+          "quantile_05": 0.9649350264212332,
+          "quantile_95": 1.0672302077097227,
+          "minimum": 0.9226725934900395,
+          "maximum": 1.0794080944696836
+        }
+      ],
+      "all_samples_geometric_mean": 1.2017601607740738,
+      "all_samples_minimum": 0.8409236145195829,
+      "all_samples_maximum": 1.7722568148500824
+    },
+    "promoted_vs_edge": {
+      "definition": "local SNR gain from reciprocal nuisance-marginalized loop variance",
+      "aggregation": "geometric mean over 10 wavelength bins x 36 epochs; 5--95% sample quantiles",
+      "per_loop": [
+        {
+          "loop": "1-2-3",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.324093532731244,
+          "arithmetic_mean": 2.333994284799634,
+          "median": 2.353014563106913,
+          "quantile_05": 1.9160969187507644,
+          "quantile_95": 2.6467662717666345,
+          "minimum": 1.8204299124761119,
+          "maximum": 2.77376295527228
+        },
+        {
+          "loop": "1-2-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.1536679658962576,
+          "arithmetic_mean": 2.1577445210865447,
+          "median": 2.160398891873255,
+          "quantile_05": 2.069735887583468,
+          "quantile_95": 2.3041420701815816,
+          "minimum": 1.1718069503880502,
+          "maximum": 2.4566591480156275
+        },
+        {
+          "loop": "1-2-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.137242854354948,
+          "arithmetic_mean": 2.1376229737908736,
+          "median": 2.122630135559565,
+          "quantile_05": 2.096401563808088,
+          "quantile_95": 2.2274551516385888,
+          "minimum": 2.092108280655538,
+          "maximum": 2.2330989237316525
+        },
+        {
+          "loop": "1-3-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.003406399803488,
+          "arithmetic_mean": 2.010417571346464,
+          "median": 2.0686794232508485,
+          "quantile_05": 1.6536136456190953,
+          "quantile_95": 2.1482119776757997,
+          "minimum": 1.4625552536840722,
+          "maximum": 2.2424554012369384
+        },
+        {
+          "loop": "1-3-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.0168622004822616,
+          "arithmetic_mean": 2.0220600473080235,
+          "median": 2.074487112886586,
+          "quantile_05": 1.6788462910639221,
+          "quantile_95": 2.1364792059120687,
+          "minimum": 1.6334676807858552,
+          "maximum": 2.145011324248392
+        },
+        {
+          "loop": "2-4-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.7517009771398298,
+          "arithmetic_mean": 1.7533464824857516,
+          "median": 1.7792562282091424,
+          "quantile_05": 1.585154435349979,
+          "quantile_95": 1.8418010458509333,
+          "minimum": 1.466342538864757,
+          "maximum": 1.8870712840834887
+        },
+        {
+          "loop": "2-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.7276455209745767,
+          "arithmetic_mean": 1.7278316471014414,
+          "median": 1.7361110567114557,
+          "quantile_05": 1.6783344545324523,
+          "quantile_95": 1.7487744476314566,
+          "minimum": 1.5809920023018942,
+          "maximum": 1.7730890937922794
+        },
+        {
+          "loop": "3-4-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.7370537485383122,
+          "arithmetic_mean": 1.7377638905441228,
+          "median": 1.746947279694517,
+          "quantile_05": 1.6395389271115977,
+          "quantile_95": 1.811628623455614,
+          "minimum": 1.576023257457308,
+          "maximum": 1.8620736632132182
+        },
+        {
+          "loop": "3-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.7414364669393756,
+          "arithmetic_mean": 1.7415953064653726,
+          "median": 1.7460994703898918,
+          "quantile_05": 1.6966533283208416,
+          "quantile_95": 1.7732468856317904,
+          "minimum": 1.6551289834226977,
+          "maximum": 1.7800014774649409
+        },
+        {
+          "loop": "4-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.7293214760378102,
+          "arithmetic_mean": 1.7294450733864588,
+          "median": 1.7268350844815776,
+          "quantile_05": 1.70068441643345,
+          "quantile_95": 1.776681577857755,
+          "minimum": 1.6572577000565178,
+          "maximum": 1.782506505764564
+        }
+      ],
+      "all_samples_geometric_mean": 1.9209863304379422,
+      "all_samples_minimum": 1.1718069503880502,
+      "all_samples_maximum": 2.77376295527228
+    },
+    "promoted_vs_parent": {
+      "definition": "local SNR gain from reciprocal nuisance-marginalized loop variance",
+      "aggregation": "geometric mean over 10 wavelength bins x 36 epochs; 5--95% sample quantiles",
+      "per_loop": [
+        {
+          "loop": "1-2-3",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.544948963896624,
+          "arithmetic_mean": 1.5450830298198743,
+          "median": 1.5479732581466958,
+          "quantile_05": 1.5003816778856707,
+          "quantile_95": 1.5667721766663987,
+          "minimum": 1.455209989505991,
+          "maximum": 1.6132835289913474
+        },
+        {
+          "loop": "1-2-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.54753616579564,
+          "arithmetic_mean": 1.5479004723519267,
+          "median": 1.54094722660246,
+          "quantile_05": 1.5170200345601015,
+          "quantile_95": 1.6250118379397518,
+          "minimum": 1.393476090045943,
+          "maximum": 1.6540251680871878
+        },
+        {
+          "loop": "1-2-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.549895962805237,
+          "arithmetic_mean": 1.5508195799300755,
+          "median": 1.5435342538019297,
+          "quantile_05": 1.4708326557590579,
+          "quantile_95": 1.6630724591553292,
+          "minimum": 1.4544964806756122,
+          "maximum": 1.74247390553098
+        },
+        {
+          "loop": "1-3-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.5457565557755426,
+          "arithmetic_mean": 1.5461303221260243,
+          "median": 1.557868761330775,
+          "quantile_05": 1.4865329786581898,
+          "quantile_95": 1.5785805354184113,
+          "minimum": 1.4421318330825565,
+          "maximum": 1.738788692100074
+        },
+        {
+          "loop": "1-3-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.5992968760873514,
+          "arithmetic_mean": 1.5996801262379703,
+          "median": 1.6084952158111356,
+          "quantile_05": 1.5278656592341668,
+          "quantile_95": 1.6437820013912339,
+          "minimum": 1.5155403362897553,
+          "maximum": 1.6756828489755726
+        },
+        {
+          "loop": "2-4-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.6075359775027998,
+          "arithmetic_mean": 1.6078328657315493,
+          "median": 1.613552110239977,
+          "quantile_05": 1.5613894014604406,
+          "quantile_95": 1.645527874517656,
+          "minimum": 1.4614730153052349,
+          "maximum": 1.6678195763575956
+        },
+        {
+          "loop": "2-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.6473939143847878,
+          "arithmetic_mean": 1.6477085415623376,
+          "median": 1.6388906332563433,
+          "quantile_05": 1.6164806226265134,
+          "quantile_95": 1.7145896701555057,
+          "minimum": 1.5871823991733391,
+          "maximum": 1.7966877802094203
+        },
+        {
+          "loop": "3-4-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.6259824537290033,
+          "arithmetic_mean": 1.626091212740978,
+          "median": 1.622856333261076,
+          "quantile_05": 1.6065957789344014,
+          "quantile_95": 1.6446444636858104,
+          "minimum": 1.5923516566091964,
+          "maximum": 1.771936907977454
+        },
+        {
+          "loop": "3-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.659436594403395,
+          "arithmetic_mean": 1.6596496353953865,
+          "median": 1.653844764094977,
+          "quantile_05": 1.6317358720512378,
+          "quantile_95": 1.7105802703613016,
+          "minimum": 1.6163714000784692,
+          "maximum": 1.804319955705073
+        },
+        {
+          "loop": "4-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 1.6638047624893706,
+          "arithmetic_mean": 1.6643011046858456,
+          "median": 1.653054771914447,
+          "quantile_05": 1.6282117466084267,
+          "quantile_95": 1.7473799774757715,
+          "minimum": 1.622077589496285,
+          "maximum": 1.8653786806924928
+        }
+      ],
+      "all_samples_geometric_mean": 1.5984772945049226,
+      "all_samples_minimum": 1.393476090045943,
+      "all_samples_maximum": 1.8653786806924928
+    },
+    "qlan_vs_edge": {
+      "definition": "local SNR gain from reciprocal nuisance-marginalized loop variance",
+      "aggregation": "geometric mean over 10 wavelength bins x 36 epochs; 5--95% sample quantiles",
+      "per_loop": [
+        {
+          "loop": "1-2-3",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 4.199795156869424,
+          "arithmetic_mean": 4.217692702263413,
+          "median": 4.252472889440401,
+          "quantile_05": 3.4625932327156077,
+          "quantile_95": 4.7809287160681695,
+          "minimum": 3.2897126621770663,
+          "maximum": 5.013413042250052
+        },
+        {
+          "loop": "1-2-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.8918245609704023,
+          "arithmetic_mean": 3.8991971031970327,
+          "median": 3.9036436058867663,
+          "quantile_05": 3.7406242610550184,
+          "quantile_95": 4.165039195074262,
+          "minimum": 2.11758120205534,
+          "maximum": 4.440266602311534
+        },
+        {
+          "loop": "1-2-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.8621432667665654,
+          "arithmetic_mean": 3.8628370242956716,
+          "median": 3.8367053287732826,
+          "quantile_05": 3.786068097778969,
+          "quantile_95": 4.02525105007203,
+          "minimum": 3.777969449560182,
+          "maximum": 4.035449953303487
+        },
+        {
+          "loop": "1-3-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.620291686474424,
+          "arithmetic_mean": 3.6329588789327167,
+          "median": 3.738674912497266,
+          "quantile_05": 2.9882577247605524,
+          "quantile_95": 3.883205328614754,
+          "minimum": 2.642994659779971,
+          "maximum": 4.0531059562448295
+        },
+        {
+          "loop": "1-3-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.6446072339025446,
+          "arithmetic_mean": 3.6540004996362994,
+          "median": 3.749950602856619,
+          "quantile_05": 3.0338558291704967,
+          "quantile_95": 3.8620922989405786,
+          "minimum": 2.9518517993527795,
+          "maximum": 3.876981530927295
+        },
+        {
+          "loop": "2-4-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.165442860395424,
+          "arithmetic_mean": 3.1684122556776946,
+          "median": 3.215244710954991,
+          "quantile_05": 2.8648580531550216,
+          "quantile_95": 3.329246514069801,
+          "minimum": 2.6498386914720387,
+          "maximum": 3.4107701125999896
+        },
+        {
+          "loop": "2-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.121973014248402,
+          "arithmetic_mean": 3.122309423569781,
+          "median": 3.1369026272878524,
+          "quantile_05": 3.032947468587766,
+          "quantile_95": 3.1606247471733075,
+          "minimum": 2.8570226039072866,
+          "maximum": 3.2047540223266653
+        },
+        {
+          "loop": "3-4-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.138974321640049,
+          "arithmetic_mean": 3.140256218988112,
+          "median": 3.156181374104696,
+          "quantile_05": 2.9628231945029646,
+          "quantile_95": 3.273473148149374,
+          "minimum": 2.848043547521573,
+          "maximum": 3.365588386361262
+        },
+        {
+          "loop": "3-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.1468941920133715,
+          "arithmetic_mean": 3.1471822349215537,
+          "median": 3.1548067004787583,
+          "quantile_05": 3.0660350608665237,
+          "quantile_95": 3.2038281763764074,
+          "minimum": 2.9909961031654677,
+          "maximum": 3.216276778847739
+        },
+        {
+          "loop": "4-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.125001579088229,
+          "arithmetic_mean": 3.1252266041637977,
+          "median": 3.1201031917831603,
+          "quantile_05": 3.073336483577766,
+          "quantile_95": 3.2112050211407484,
+          "minimum": 2.994842923093261,
+          "maximum": 3.2217754393574003
+        }
+      ],
+      "all_samples_geometric_mean": 3.471353012847346,
+      "all_samples_minimum": 2.11758120205534,
+      "all_samples_maximum": 5.013413042250052
+    },
+    "qlan_vs_parent": {
+      "definition": "local SNR gain from reciprocal nuisance-marginalized loop variance",
+      "aggregation": "geometric mean over 10 wavelength bins x 36 epochs; 5--95% sample quantiles",
+      "per_loop": [
+        {
+          "loop": "1-2-3",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.791827903999334,
+          "arithmetic_mean": 2.7920691476387764,
+          "median": 2.7969638332894116,
+          "quantile_05": 2.711632965958581,
+          "quantile_95": 2.8303887005262545,
+          "minimum": 2.6297209773338266,
+          "maximum": 2.9153768659985038
+        },
+        {
+          "loop": "1-2-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.79650315387732,
+          "arithmetic_mean": 2.7971615020982337,
+          "median": 2.784275684430025,
+          "quantile_05": 2.7409713606988007,
+          "quantile_95": 2.9367726272432577,
+          "minimum": 2.5181611807454205,
+          "maximum": 2.9890013901248578
+        },
+        {
+          "loop": "1-2-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.800767467646333,
+          "arithmetic_mean": 2.8024354015651403,
+          "median": 2.7898952692350547,
+          "quantile_05": 2.658139354436632,
+          "quantile_95": 3.005651581954798,
+          "minimum": 2.6289166535538047,
+          "maximum": 3.1488377724696446
+        },
+        {
+          "loop": "1-3-4",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.7932872774772264,
+          "arithmetic_mean": 2.7939598586191585,
+          "median": 2.815798491082332,
+          "quantile_05": 2.6866189692420575,
+          "quantile_95": 2.850655890499042,
+          "minimum": 2.6060873419550363,
+          "maximum": 3.1421781954085386
+        },
+        {
+          "loop": "1-3-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.8900382794382025,
+          "arithmetic_mean": 2.890727126501594,
+          "median": 2.9068118816497677,
+          "quantile_05": 2.761017587571697,
+          "quantile_95": 2.9698526128373226,
+          "minimum": 2.738744403266292,
+          "maximum": 3.0281391490485183
+        },
+        {
+          "loop": "2-4-5",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.9049268963265646,
+          "arithmetic_mean": 2.905460789614535,
+          "median": 2.9159474489465484,
+          "quantile_05": 2.8214183883990263,
+          "quantile_95": 2.972699724271508,
+          "minimum": 2.641038938620944,
+          "maximum": 3.0139293696331033
+        },
+        {
+          "loop": "2-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.976952900410428,
+          "arithmetic_mean": 2.9775195916670505,
+          "median": 2.961763261081756,
+          "quantile_05": 2.9215888126986216,
+          "quantile_95": 3.098447959842883,
+          "minimum": 2.8687386300695064,
+          "maximum": 3.246808075403615
+        },
+        {
+          "loop": "3-4-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.9382609340600085,
+          "arithmetic_mean": 2.93845588700313,
+          "median": 2.9330344409899047,
+          "quantile_05": 2.9027341674632083,
+          "quantile_95": 2.9730301555681167,
+          "minimum": 2.8775507211155213,
+          "maximum": 3.2020805870101308
+        },
+        {
+          "loop": "3-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 2.9987148426496617,
+          "arithmetic_mean": 2.9990988315694014,
+          "median": 2.9891193054650187,
+          "quantile_05": 2.9493849924722766,
+          "quantile_95": 3.0915239090735653,
+          "minimum": 2.9214960286604263,
+          "maximum": 3.2606002374615626
+        },
+        {
+          "loop": "4-5-6",
+          "n_wavelength_epoch_samples": 360,
+          "geometric_mean": 3.006608419613543,
+          "arithmetic_mean": 3.0075051576754364,
+          "median": 2.987150098364128,
+          "quantile_05": 2.9428268811240605,
+          "quantile_95": 3.1577035721841633,
+          "minimum": 2.9318096296819016,
+          "maximum": 3.3709399211543496
+        }
+      ],
+      "all_samples_geometric_mean": 2.8885572397502255,
+      "all_samples_minimum": 2.5181611807454205,
+      "all_samples_maximum": 3.3709399211543496
+    },
+    "receiver_cache": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/receiver_cache_eff002_remote6_finite_perband_100ms_ns3_v1.npz"
+  },
+  "outputs": {
+    "seed_metrics_csv": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results/sm_paired_povm_100ms_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_seed_metrics.csv",
+    "statistics_csv": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results/sm_paired_povm_100ms_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_statistics.csv",
+    "statistics_json": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results/sm_paired_povm_100ms_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_statistics.json",
+    "chi2_table_tex": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/results/sm_paired_povm_100ms_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100_chi2_table.tex",
+    "figure_pdf": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/figures/sm_paired_povm_100ms_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100.pdf",
+    "figure_png": "/Users/xinyaoguo/Desktop/VLBI/telescope_final/paper_figure_data_reproducibility_20260824/02_six_station_imaging_(fig3&4)/figures/sm_paired_povm_100ms_ns3_eff002_perband_localclosure_nogauge_nocoreprior_chi0p85w075to100.png"
+  }
+}

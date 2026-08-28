@@ -1,0 +1,130 @@
+Matplotlib is building the font cache; this may take a moment.
+{
+  "source_18_summary": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/18_balanced_10loop_independent_set_20260611/results/remote_star_joint_near_summary.json",
+  "loop_set": [
+    "S1-S2-S3",
+    "S1-S2-S4",
+    "S1-S2-S5",
+    "S1-S3-S4",
+    "S1-S3-S6",
+    "S2-S4-S5",
+    "S2-S5-S6",
+    "S3-S4-S6",
+    "S3-S5-S6",
+    "S4-S5-S6"
+  ],
+  "upgraded_smallblock_info": {
+    "model": "upgraded_smallblock_near",
+    "description": "Receiver schedule restricted to local three-station blocks that contain at least one compact-core station. This keeps compact-core multi-end access and remote-involved small blocks, but forbids the pure remote S4-S5-S6 direct block and forbids a full six-mode joint receiver.",
+    "objective": "match full direct-optimized selected-loop SNR under exact station budgets and strict gain>=edge",
+    "score": -0.00022265435964243267,
+    "n_allowed_blocks": 19,
+    "forbidden_blocks": [
+      "S4-S5-S6"
+    ],
+    "station_weight_sums": {
+      "Keck II": 1.0,
+      "Subaru": 0.9999999999999998,
+      "Gemini North": 1.0,
+      "new 5 m r=2km compact": 1.0,
+      "new 5 m r=4km compact": 1.0,
+      "new 5 m r=9km compact": 0.9999999999999998
+    },
+    "max_station_weight_error": 2.220446049250313e-16,
+    "snr_gain_vs_edge": {
+      "min": 1.1892874896183623,
+      "mean": 1.2543263005404062,
+      "median": 1.2282464124648143,
+      "max": 1.3847567145943234
+    },
+    "snr_ratio_vs_direct_optimized": {
+      "min": 0.9744654083665556,
+      "mean": 0.9912309658054644,
+      "median": 0.9899576458414387,
+      "max": 1.0071009040494816
+    },
+    "top_weights": {
+      "S2-S4-S5": 0.19909003677675957,
+      "S2-S5-S6": 0.1807682059349027,
+      "S3-S5-S6": 0.1755113287093559,
+      "S3-S4-S6": 0.1697500665596074,
+      "S1-S3-S6": 0.16094733602315672,
+      "S1-S5-S6": 0.15408662146300853,
+      "S1-S2-S5": 0.14300342763655302,
+      "S1-S2-S3": 0.13836495958572295,
+      "S1-S2-S4": 0.12962234395801603,
+      "S1-S3-S4": 0.12579050136805678,
+      "S2-S3-S4": 0.11658835119547147,
+      "S1-S4-S6": 0.08527032095786932
+    },
+    "all_weights": {
+      "S1-S2-S3": 0.13836495958572295,
+      "S1-S2-S4": 0.12962234395801603,
+      "S1-S2-S5": 0.14300342763655302,
+      "S1-S2-S6": 0.006796043132927434,
+      "S1-S3-S4": 0.12579050136805678,
+      "S1-S3-S5": 0.018031172249847544,
+      "S1-S3-S6": 0.16094733602315672,
+      "S1-S4-S5": 0.038087273624841704,
+      "S1-S4-S6": 0.08527032095786932,
+      "S1-S5-S6": 0.15408662146300853,
+      "S2-S3-S4": 0.11658835119547147,
+      "S2-S3-S5": 0.018896554560474788,
+      "S2-S3-S6": 0.003594350704050279,
+      "S2-S4-S5": 0.19909003677675957,
+      "S2-S4-S6": 0.06327572651512153,
+      "S2-S5-S6": 0.1807682059349027,
+      "S3-S4-S5": 0.07252537904425616,
+      "S3-S4-S6": 0.1697500665596074,
+      "S3-S5-S6": 0.1755113287093559
+    }
+  },
+  "comparisons": {
+    "direct_optimized_schedule": {
+      "min": 1.2112182127920084,
+      "mean": 1.2657068827332938,
+      "median": 1.2348022012752549,
+      "max": 1.4027337769266373
+    },
+    "direct_balanced_10loop": {
+      "min": 0.9547422760195636,
+      "mean": 1.1625644974626355,
+      "median": 1.1268200933530963,
+      "max": 1.4908328893349319
+    },
+    "remote_star_independent": {
+      "min": 1.0000612560361464,
+      "mean": 1.1572738520284234,
+      "median": 1.1187292126419792,
+      "max": 1.3657509493176099
+    },
+    "upgraded_smallblock": {
+      "min": 1.1892874896183623,
+      "mean": 1.2543263005404062,
+      "median": 1.2282464124648143,
+      "max": 1.3847567145943234
+    }
+  },
+  "ratio_to_direct_optimized": {
+    "direct_balanced_10loop": {
+      "min": 0.7000602078227782,
+      "mean": 0.9238688806180353,
+      "median": 0.9131102333334926,
+      "max": 1.167955693951757
+    },
+    "remote_star_independent": {
+      "min": 0.7129843271163208,
+      "mean": 0.9192244737084959,
+      "median": 0.9107939570868693,
+      "max": 1.1119876114297946
+    },
+    "upgraded_smallblock": {
+      "min": 0.9744654083665556,
+      "mean": 0.9912309658054644,
+      "median": 0.9899576458414387,
+      "max": 1.0071009040494816
+    }
+  },
+  "csv": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/19_upgraded_near_smallblock_20260611/results/upgraded_smallblock_loop_gains.csv",
+  "figure": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/19_upgraded_near_smallblock_20260611/figures/upgraded_smallblock_loop_gains.png"
+}

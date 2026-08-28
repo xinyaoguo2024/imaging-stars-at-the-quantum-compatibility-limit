@@ -1,0 +1,106 @@
+{
+  "description": "Maunakea four largest optical telescopes plus five 5 m stations with fixed radii from 5 to 20 km and optimized angles for NGC 4151 uv coverage.",
+  "case_key": "maunakea_top4_plus5_ngc4151",
+  "case_title": "Maunakea top-four core + five 5 m outstations (5--20 km)",
+  "n_trials": 20000,
+  "accepted_trials": 20000,
+  "radii_km": [
+    5.0,
+    8.75,
+    12.5,
+    16.25,
+    20.0
+  ],
+  "hub_km": [
+    -0.1796718400995452,
+    0.06880134886697599
+  ],
+  "metrics": {
+    "uv_occ2d": 0.3,
+    "uv_ent2d": 0.6561010766030431,
+    "radial_occ": 0.9473684210526315,
+    "radial_ent": 0.8252198886509351,
+    "angular_occ": 1.0,
+    "angular_ent": 0.960084839193873,
+    "baseline_occ": 0.11538461538461539,
+    "baseline_ent": 0.5350519291805955,
+    "baseline_radial_occ": 0.7333333333333333,
+    "baseline_radial_ent": 0.8133698871636803,
+    "uv_isotropy": 0.9652571534455126,
+    "umax_g_lambda": 68.07756587872366,
+    "vmax_g_lambda": 65.71235745359616,
+    "baseline_min_km": 0.1446313582085098,
+    "baseline_median_km": 12.431613505751852,
+    "baseline_max_km": 32.60893745462638,
+    "eta_min": 0.5956621435290105,
+    "eta_aperture_weighted": 0.9221956356595566,
+    "score": 9.534305786102301
+  },
+  "stations": [
+    {
+      "name": "Keck I",
+      "x_km": -0.2843679401823017,
+      "y_km": 0.10524599806921867,
+      "diameter_m": 10.0,
+      "is_added": false
+    },
+    {
+      "name": "Keck II",
+      "x_km": -0.233697412234395,
+      "y_km": 0.17351968302884233,
+      "diameter_m": 10.0,
+      "is_added": false
+    },
+    {
+      "name": "Subaru",
+      "x_km": -0.42037081717666885,
+      "y_km": 0.056037795231751446,
+      "diameter_m": 8.2,
+      "is_added": false
+    },
+    {
+      "name": "Gemini North",
+      "x_km": 0.308923898971121,
+      "y_km": -0.13327267932961595,
+      "diameter_m": 8.1,
+      "is_added": false
+    },
+    {
+      "name": "new 5 m r=5km",
+      "x_km": 0.24940023626681138,
+      "y_km": 5.050357044960584,
+      "diameter_m": 5.0,
+      "is_added": true
+    },
+    {
+      "name": "new 5 m r=8.75km",
+      "x_km": 6.256933230397542,
+      "y_km": -5.858475864698387,
+      "diameter_m": 5.0,
+      "is_added": true
+    },
+    {
+      "name": "new 5 m r=12.5km",
+      "x_km": -11.686537389465208,
+      "y_km": 4.951633030260638,
+      "diameter_m": 5.0,
+      "is_added": true
+    },
+    {
+      "name": "new 5 m r=16.25km",
+      "x_km": 15.54323223255941,
+      "y_km": 4.174016023151919,
+      "diameter_m": 5.0,
+      "is_added": true
+    },
+    {
+      "name": "new 5 m r=20km",
+      "x_km": -8.079782495159325,
+      "y_km": -18.304773470362157,
+      "diameter_m": 5.0,
+      "is_added": true
+    }
+  ],
+  "figure_pdf": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/output/figures/maunakea_top4_plus5_ngc4151_coverage.pdf",
+  "figure_png": "/Users/xinyaoguo/Desktop/VLBI/Homodyne_telescope_offical/output/figures/maunakea_top4_plus5_ngc4151_coverage.png"
+}

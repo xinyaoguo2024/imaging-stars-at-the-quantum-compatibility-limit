@@ -1,0 +1,597 @@
+{
+  "case": "six_station_oldS2_to_oldS7_compact_remote3",
+  "n_station": 6,
+  "n_root_loops": 10,
+  "source_payload": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/16_six_station_reduced_from7_20260611/results/near_match_direct_split_payload.json",
+  "alpha_core": [
+    0.0458802184110951,
+    0.11654081364115448,
+    0.1595953128499093
+  ],
+  "station_budget_total_minmax": [
+    0.9999999999999999,
+    1.0
+  ],
+  "direct_weight_info": {
+    "model": "physical_all_triangle_direct_split_station_budget",
+    "description": "Each scalar three-mode direct-closure receiver on triangle (a,b,c) consumes the same fraction w from stations a,b,c. With w=1/C(N-1,2), each station's total directed fraction over all triangles is exactly one.",
+    "n_triangle_settings": 20,
+    "per_triangle_weight": 0.1,
+    "station_budget_constraint": "for every station i, sum_{tri contains i} w_tri <= 1",
+    "station_weight_sums": {
+      "S1": 1.0,
+      "S2": 1.0,
+      "S3": 1.0,
+      "S4": 1.0,
+      "S5": 1.0,
+      "S6": 1.0
+    },
+    "max_station_weight_sum": 1.0,
+    "total_triangle_weight_sum": 2.0,
+    "target": "loop-by-loop matching target for the near split",
+    "scalar_fisher_min": 36.07893900155251,
+    "scalar_fisher_mean": 2612.256928321971,
+    "scalar_fisher_max": 31692.409055153355,
+    "scalar_fishers": {
+      "S1-S2-S3": 31692.409055153355,
+      "S1-S2-S4": 6531.075223271444,
+      "S1-S2-S5": 1631.1528273198317,
+      "S1-S2-S6": 479.7079228706326,
+      "S1-S3-S4": 3566.460925759069,
+      "S1-S3-S5": 1425.018069258542,
+      "S1-S3-S6": 338.1828920041692,
+      "S1-S4-S5": 458.3029643042844,
+      "S1-S4-S6": 200.89471378315366,
+      "S1-S5-S6": 43.4773342942407,
+      "S2-S3-S4": 3100.68878712162,
+      "S2-S3-S5": 1131.3849181762184,
+      "S2-S3-S6": 295.20068765587,
+      "S2-S4-S5": 432.44121432020006,
+      "S2-S4-S6": 194.7395036441877,
+      "S2-S5-S6": 42.283346188828276,
+      "S3-S4-S5": 424.492260299155,
+      "S3-S4-S6": 177.8519923508362,
+      "S3-S5-S6": 43.294989662223074,
+      "S4-S5-S6": 36.07893900155251
+    }
+  },
+  "direct_balanced_10loop_info": {
+    "description": "Equal photon budget on ten balanced independent triangle-closure coordinates",
+    "per_loop_weight": 0.2,
+    "selected_loops": [
+      "S1-S2-S3",
+      "S1-S2-S4",
+      "S1-S2-S5",
+      "S1-S3-S4",
+      "S1-S3-S6",
+      "S2-S4-S5",
+      "S2-S5-S6",
+      "S3-S4-S6",
+      "S3-S5-S6",
+      "S4-S5-S6"
+    ],
+    "selected_loop_rank": 10,
+    "station_loop_counts": {
+      "Keck II": 5,
+      "Subaru": 5,
+      "Gemini North": 5,
+      "new 5 m r=2km compact": 5,
+      "new 5 m r=4km compact": 5,
+      "new 5 m r=9km compact": 5
+    },
+    "station_weight_sums": {
+      "Keck II": 1.0,
+      "Subaru": 1.0,
+      "Gemini North": 1.0,
+      "new 5 m r=2km compact": 1.0,
+      "new 5 m r=4km compact": 1.0,
+      "new 5 m r=9km compact": 1.0
+    },
+    "max_station_weight_error": 0.0,
+    "all_triangle_weights": {
+      "S1-S2-S3": 0.2,
+      "S1-S2-S4": 0.2,
+      "S1-S2-S5": 0.2,
+      "S1-S2-S6": 0.0,
+      "S1-S3-S4": 0.2,
+      "S1-S3-S5": 0.0,
+      "S1-S3-S6": 0.2,
+      "S1-S4-S5": 0.0,
+      "S1-S4-S6": 0.0,
+      "S1-S5-S6": 0.0,
+      "S2-S3-S4": 0.0,
+      "S2-S3-S5": 0.0,
+      "S2-S3-S6": 0.0,
+      "S2-S4-S5": 0.2,
+      "S2-S4-S6": 0.0,
+      "S2-S5-S6": 0.2,
+      "S3-S4-S5": 0.0,
+      "S3-S4-S6": 0.2,
+      "S3-S5-S6": 0.2,
+      "S4-S5-S6": 0.2
+    }
+  },
+  "direct_balanced_10loop_weights": [
+    0.2,
+    0.2,
+    0.2,
+    0.0,
+    0.2,
+    0.0,
+    0.2,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.2,
+    0.0,
+    0.2,
+    0.0,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "direct_optimized_schedule_info": {
+    "objective": "maximize mean log root-loop SNR gain with worst-loop and variance regularization",
+    "constraints": "w_tri >= 0 and sum_{tri contains station i} w_tri = 1 for every station",
+    "score": 0.1806629987757093,
+    "station_weight_sums": {
+      "Keck II": 1.0,
+      "Subaru": 1.0,
+      "Gemini North": 1.0,
+      "new 5 m r=2km compact": 1.0,
+      "new 5 m r=4km compact": 1.0,
+      "new 5 m r=9km compact": 1.0
+    },
+    "max_station_weight_error": 0.0,
+    "snr_gain_vs_edge": {
+      "min": 1.112664836926452,
+      "mean": 1.1571012930284574,
+      "median": 1.1285214041429823,
+      "max": 1.2810523333151556
+    },
+    "top_triangle_weights": {
+      "S4-S5-S6": 0.12866167642403667,
+      "S2-S5-S6": 0.12854172019011592,
+      "S1-S3-S5": 0.12346055540421125,
+      "S1-S3-S4": 0.12027062350648084,
+      "S2-S4-S5": 0.11661105879892927,
+      "S2-S3-S6": 0.11249241999346284,
+      "S1-S2-S4": 0.11136426231038413,
+      "S1-S2-S3": 0.10860803893394494
+    },
+    "all_triangle_weights": {
+      "S1-S2-S3": 0.10860803893394494,
+      "S1-S2-S4": 0.11136426231038413,
+      "S1-S2-S5": 0.09559503681775251,
+      "S1-S2-S6": 0.10142911919011495,
+      "S1-S3-S4": 0.12027062350648084,
+      "S1-S3-S5": 0.12346055540421125,
+      "S1-S3-S6": 0.09701021218358759,
+      "S1-S4-S5": 0.07048643991218549,
+      "S1-S4-S6": 0.09750211920202138,
+      "S1-S5-S6": 0.07427359253931705,
+      "S2-S3-S4": 0.06918943805418527,
+      "S2-S3-S5": 0.08063393109596757,
+      "S2-S3-S6": 0.11249241999346284,
+      "S2-S4-S5": 0.11661105879892927,
+      "S2-S4-S6": 0.0755349746151427,
+      "S2-S5-S6": 0.12854172019011592,
+      "S3-S4-S5": 0.10378061516595888,
+      "S3-S4-S6": 0.10659879201067539,
+      "S3-S5-S6": 0.07795537365152554,
+      "S4-S5-S6": 0.12866167642403667
+    }
+  },
+  "direct_optimized_schedule_weights": [
+    0.10860803893394494,
+    0.11136426231038413,
+    0.09559503681775251,
+    0.10142911919011495,
+    0.12027062350648084,
+    0.12346055540421125,
+    0.09701021218358759,
+    0.07048643991218549,
+    0.09750211920202138,
+    0.07427359253931705,
+    0.06918943805418527,
+    0.08063393109596757,
+    0.11249241999346284,
+    0.11661105879892927,
+    0.0755349746151427,
+    0.12854172019011592,
+    0.10378061516595888,
+    0.10659879201067539,
+    0.07795537365152554,
+    0.12866167642403667
+  ],
+  "full_star_info": {
+    "remote_star_receivers": [
+      {
+        "remote": "new 5 m r=2km compact",
+        "gamma_core_to_remote": "1,1,1",
+        "gamma_remote_to_core": "1,1,1",
+        "subset": "Keck II|Subaru|Gemini North|new 5 m r=2km compact",
+        "core_to_remote_available_fractions": "0.29526856,0.23124387,0.28121894",
+        "core_to_remote_star_fractions": "0.29526856,0.23124387,0.28121894",
+        "remote_to_core_available_fractions": "0.21695677,0.18551174,0.18122747",
+        "remote_to_core_joint_available_fraction": 0.5836959774351437,
+        "remote_to_core_joint_star_fraction": 0.5836959774351437,
+        "total_star_receiver_input_fraction": 1.39142733881895
+      },
+      {
+        "remote": "new 5 m r=4km compact",
+        "gamma_core_to_remote": "1,1,1",
+        "gamma_remote_to_core": "1,1,1",
+        "subset": "Keck II|Subaru|Gemini North|new 5 m r=4km compact",
+        "core_to_remote_available_fractions": "0.30002323,0.33993353,0.20867013",
+        "core_to_remote_star_fractions": "0.30002323,0.33993353,0.20867013",
+        "remote_to_core_available_fractions": "0.24167644,0.16474118,0.15801491",
+        "remote_to_core_joint_available_fraction": 0.5644325367808034,
+        "remote_to_core_joint_star_fraction": 0.5644325367808034,
+        "total_star_receiver_input_fraction": 1.413059436951251
+      },
+      {
+        "remote": "new 5 m r=9km compact",
+        "gamma_core_to_remote": "1,1,1",
+        "gamma_remote_to_core": "1,1,1",
+        "subset": "Keck II|Subaru|Gemini North|new 5 m r=9km compact",
+        "core_to_remote_available_fractions": "0.35882799,0.31228179,0.35051562",
+        "core_to_remote_star_fractions": "0.35882799,0.31228179,0.35051562",
+        "remote_to_core_available_fractions": "0.26837582,0.18120295,0.13868188",
+        "remote_to_core_joint_available_fraction": 0.5882606576017071,
+        "remote_to_core_joint_star_fraction": 0.5882606576017071,
+        "total_star_receiver_input_fraction": 1.6098860511452944
+      }
+    ],
+    "split_row_sums": {
+      "Keck II": 0.9541197815889049,
+      "Subaru": 0.8834591863588455,
+      "Gemini North": 0.8404046871500908,
+      "new 5 m r=2km compact": 0.9999999999999999,
+      "new 5 m r=4km compact": 1.0,
+      "new 5 m r=9km compact": 1.0
+    },
+    "gamma_model": "gamma fraction of every core-remote directed split enters a remote-star joint receiver; the residual remains pairwise edge-first",
+    "core_core_handling": "full",
+    "gamma_kind": "by_remote",
+    "gamma_core_to_remote": [
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ]
+    ],
+    "gamma_remote_to_core": [
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ],
+      [
+        1.0,
+        1.0,
+        1.0
+      ]
+    ]
+  },
+  "scalar_star_info": {
+    "remote_star_receivers": [
+      {
+        "remote": "new 5 m r=2km compact",
+        "gamma_core_to_remote": "0.1,0.1,0.1",
+        "gamma_remote_to_core": "0.1,0.1,0.1",
+        "subset": "Keck II|Subaru|Gemini North|new 5 m r=2km compact",
+        "core_to_remote_available_fractions": "0.29526856,0.23124387,0.28121894",
+        "core_to_remote_star_fractions": "0.029526856,0.023124387,0.028121894",
+        "remote_to_core_available_fractions": "0.21695677,0.18551174,0.18122747",
+        "remote_to_core_joint_available_fraction": 0.5836959774351437,
+        "remote_to_core_joint_star_fraction": 0.05836959774351437,
+        "total_star_receiver_input_fraction": 0.139142733881895
+      },
+      {
+        "remote": "new 5 m r=4km compact",
+        "gamma_core_to_remote": "0.1,0.1,0.1",
+        "gamma_remote_to_core": "0.1,0.1,0.1",
+        "subset": "Keck II|Subaru|Gemini North|new 5 m r=4km compact",
+        "core_to_remote_available_fractions": "0.30002323,0.33993353,0.20867013",
+        "core_to_remote_star_fractions": "0.030002323,0.033993353,0.020867013",
+        "remote_to_core_available_fractions": "0.24167644,0.16474118,0.15801491",
+        "remote_to_core_joint_available_fraction": 0.5644325367808034,
+        "remote_to_core_joint_star_fraction": 0.05644325367808034,
+        "total_star_receiver_input_fraction": 0.1413059436951251
+      },
+      {
+        "remote": "new 5 m r=9km compact",
+        "gamma_core_to_remote": "0.1,0.1,0.1",
+        "gamma_remote_to_core": "0.1,0.1,0.1",
+        "subset": "Keck II|Subaru|Gemini North|new 5 m r=9km compact",
+        "core_to_remote_available_fractions": "0.35882799,0.31228179,0.35051562",
+        "core_to_remote_star_fractions": "0.035882799,0.031228179,0.035051562",
+        "remote_to_core_available_fractions": "0.26837582,0.18120295,0.13868188",
+        "remote_to_core_joint_available_fraction": 0.5882606576017071,
+        "remote_to_core_joint_star_fraction": 0.05882606576017072,
+        "total_star_receiver_input_fraction": 0.16098860511452948
+      }
+    ],
+    "split_row_sums": {
+      "Keck II": 0.9541197815889049,
+      "Subaru": 0.8834591863588455,
+      "Gemini North": 0.8404046871500908,
+      "new 5 m r=2km compact": 0.9999999999999999,
+      "new 5 m r=4km compact": 1.0,
+      "new 5 m r=9km compact": 1.0
+    },
+    "gamma_model": "gamma fraction of every core-remote directed split enters a remote-star joint receiver; the residual remains pairwise edge-first",
+    "core_core_handling": "nuisance",
+    "gamma_kind": "by_remote",
+    "gamma_core_to_remote": [
+      [
+        0.1,
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.1,
+        0.1
+      ]
+    ],
+    "gamma_remote_to_core": [
+      [
+        0.1,
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.1,
+        0.1
+      ]
+    ]
+  },
+  "scalar_gamma_by_remote": [
+    0.1,
+    0.1,
+    0.1
+  ],
+  "independent_star_info": {
+    "remote_star_receivers": [
+      {
+        "remote": "new 5 m r=2km compact",
+        "gamma_core_to_remote": "0.245,0.1,0.1",
+        "gamma_remote_to_core": "0,0.36,0.245",
+        "subset": "Keck II|Subaru|Gemini North|new 5 m r=2km compact",
+        "core_to_remote_available_fractions": "0.29526856,0.23124387,0.28121894",
+        "core_to_remote_star_fractions": "0.072340797,0.023124387,0.028121894",
+        "remote_to_core_available_fractions": "0.21695677,0.18551174,0.18122747",
+        "remote_to_core_joint_available_fraction": 0.5836959774351437,
+        "remote_to_core_joint_star_fraction": 0.11118495588674665,
+        "total_star_receiver_input_fraction": 0.23477203301354688
+      },
+      {
+        "remote": "new 5 m r=4km compact",
+        "gamma_core_to_remote": "0.325,0.1,0.1",
+        "gamma_remote_to_core": "0,0.345,0.36",
+        "subset": "Keck II|Subaru|Gemini North|new 5 m r=4km compact",
+        "core_to_remote_available_fractions": "0.30002323,0.33993353,0.20867013",
+        "core_to_remote_star_fractions": "0.09750755,0.033993353,0.020867013",
+        "remote_to_core_available_fractions": "0.24167644,0.16474118,0.15801491",
+        "remote_to_core_joint_available_fraction": 0.5644325367808034,
+        "remote_to_core_joint_star_fraction": 0.11372107580110892,
+        "total_star_receiver_input_fraction": 0.2660889930250938
+      },
+      {
+        "remote": "new 5 m r=9km compact",
+        "gamma_core_to_remote": "0.36,0.1,0.1",
+        "gamma_remote_to_core": "0.05,0.36,0.36",
+        "subset": "Keck II|Subaru|Gemini North|new 5 m r=9km compact",
+        "core_to_remote_available_fractions": "0.35882799,0.31228179,0.35051562",
+        "core_to_remote_star_fractions": "0.12917808,0.031228179,0.035051562",
+        "remote_to_core_available_fractions": "0.26837582,0.18120295,0.13868188",
+        "remote_to_core_joint_available_fraction": 0.5882606576017071,
+        "remote_to_core_joint_star_fraction": 0.12857733182497671,
+        "total_star_receiver_input_fraction": 0.3240351488438166
+      }
+    ],
+    "split_row_sums": {
+      "Keck II": 0.9541197815889049,
+      "Subaru": 0.8834591863588455,
+      "Gemini North": 0.8404046871500908,
+      "new 5 m r=2km compact": 0.9999999999999999,
+      "new 5 m r=4km compact": 1.0,
+      "new 5 m r=9km compact": 1.0
+    },
+    "gamma_model": "gamma fraction of every core-remote directed split enters a remote-star joint receiver; the residual remains pairwise edge-first",
+    "core_core_handling": "nuisance",
+    "gamma_kind": "independent_core_remote_and_remote_core",
+    "gamma_core_to_remote": [
+      [
+        0.245,
+        0.32500000000000007,
+        0.3600000000000001
+      ],
+      [
+        0.1,
+        0.1,
+        0.1
+      ],
+      [
+        0.1,
+        0.1,
+        0.1
+      ]
+    ],
+    "gamma_remote_to_core": [
+      [
+        0.0,
+        0.3600000000000001,
+        0.245
+      ],
+      [
+        0.0,
+        0.3450000000000001,
+        0.3600000000000001
+      ],
+      [
+        0.05,
+        0.3600000000000001,
+        0.3600000000000001
+      ]
+    ],
+    "independent_gamma_best_score": -0.0036082344357661845,
+    "independent_gamma_vector": [
+      0.245,
+      0.32500000000000007,
+      0.3600000000000001,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.1,
+      0.0,
+      0.3600000000000001,
+      0.245,
+      0.0,
+      0.3450000000000001,
+      0.3600000000000001,
+      0.05,
+      0.3600000000000001,
+      0.3600000000000001
+    ]
+  },
+  "independent_gamma_vector": [
+    0.245,
+    0.32500000000000007,
+    0.3600000000000001,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.1,
+    0.0,
+    0.3600000000000001,
+    0.245,
+    0.0,
+    0.3450000000000001,
+    0.3600000000000001,
+    0.05,
+    0.3600000000000001,
+    0.3600000000000001
+  ],
+  "snr_gain_vs_edge": {
+    "direct_physical": {
+      "min": 1.0797700590555976,
+      "mean": 1.1513399222557719,
+      "median": 1.1448868761337447,
+      "max": 1.2915817385212744
+    },
+    "direct_balanced_10loop": {
+      "min": 0.12997710491475664,
+      "mean": 0.941951418568355,
+      "median": 1.0433883373630608,
+      "max": 1.4908328893349319
+    },
+    "direct_optimized_schedule": {
+      "min": 1.112664836926452,
+      "mean": 1.1571012930284574,
+      "median": 1.1285214041429823,
+      "max": 1.2810523333151556
+    },
+    "current_near": {
+      "min": 1.0000386985196186,
+      "mean": 1.0376498672151813,
+      "median": 1.023816587650575,
+      "max": 1.140244154038849
+    },
+    "remote_star_scalar": {
+      "min": 1.0185421768076723,
+      "mean": 1.0947129335073538,
+      "median": 1.0711186989062225,
+      "max": 1.2149556979701053
+    },
+    "remote_star_independent": {
+      "min": 1.035873897370661,
+      "mean": 1.1059051798318402,
+      "median": 1.0748019186973568,
+      "max": 1.2323367226663895
+    },
+    "remote_star_full": {
+      "min": 1.0668533451562356,
+      "mean": 1.7811595292519684,
+      "median": 1.8048043456441862,
+      "max": 3.443069200052686
+    }
+  },
+  "snr_ratio_vs_direct": {
+    "direct_balanced_10loop": {
+      "min": 0.12031707027159812,
+      "mean": 0.8275831253550561,
+      "median": 0.8995926326103626,
+      "max": 1.3736868657748909
+    },
+    "direct_optimized_schedule": {
+      "min": 0.9678252124988677,
+      "mean": 1.0059980420768406,
+      "median": 1.0005500548112534,
+      "max": 1.0466980024498245
+    },
+    "current_near": {
+      "min": 0.8825005928074771,
+      "mean": 0.9024051513709918,
+      "median": 0.8832592758837624,
+      "max": 0.9544774451896597
+    },
+    "remote_star_scalar": {
+      "min": 0.8872017748467378,
+      "mean": 0.9518924870923293,
+      "median": 0.974919269113077,
+      "max": 0.9930020594367533
+    },
+    "remote_star_independent": {
+      "min": 0.8948866924176961,
+      "mean": 0.9614377999780327,
+      "median": 0.9878284816245321,
+      "max": 0.9943883010366884
+    },
+    "remote_star_full": {
+      "min": 0.9023095183161725,
+      "mean": 1.5639714956555486,
+      "median": 1.6099757950027627,
+      "max": 3.1725211939591547
+    }
+  },
+  "gamma_scan_csv": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/17_remote_star_joint_near_20260611/results/remote_star_gamma_scan.csv",
+  "independent_gamma_search_csv": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/17_remote_star_joint_near_20260611/results/remote_star_independent_gamma_search.csv",
+  "loop_rows_csv": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/17_remote_star_joint_near_20260611/results/remote_star_joint_loop_gains.csv",
+  "figure_png": "/Users/xinyaoguo/Desktop/VLBI/closure_based telescope/17_remote_star_joint_near_20260611/figures/remote_star_joint_loop_gains.png"
+}

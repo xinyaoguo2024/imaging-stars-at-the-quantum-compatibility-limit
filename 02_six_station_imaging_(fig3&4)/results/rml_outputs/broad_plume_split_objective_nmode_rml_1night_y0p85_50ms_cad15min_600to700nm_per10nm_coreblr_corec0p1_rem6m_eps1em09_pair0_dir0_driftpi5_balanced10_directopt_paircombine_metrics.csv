@@ -1,0 +1,4 @@
+strategy,label,best_start,global_corr,blr_corr,profile_rmse,amp_chi2,phase_chi2
+edge_uniform,Uniform edge-first,photon-weighted per-band stack,0.7471397513898339,0.3599177182068284,0.5808155948370402,0.9939293089020459,0.9870301184071523
+optimal_singlecopy,Optimized single-copy POVM,photon-weighted per-band stack,0.7770779400629421,0.3269635384843078,0.5853775441430865,0.9728901467734365,0.9906459488381256
+promoted_singlecopy,Promoted score lift,photon-weighted per-band stack,0.8315518240341392,0.4281108197395277,0.5370923498317891,1.0062101143193238,0.9943952794490671

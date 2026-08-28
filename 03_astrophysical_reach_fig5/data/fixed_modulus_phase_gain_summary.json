@@ -1,0 +1,374 @@
+{
+  "schema_version": 2,
+  "definition": "Physical fixed-modulus random-phase Monte Carlo for one predeclared triangle closure under the phase-only uniform edge-first POVM and its coherent score-fluctuation lift.",
+  "ensemble": {
+    "N_values": [
+      6,
+      20
+    ],
+    "all_offdiagonal_magnitudes": 0.5,
+    "residual_edge_phase_prior": "iid Uniform[-0.2,+0.2] rad, conditioned on G >= 0",
+    "station_gauge_phase_prior": "iid Uniform[-pi,+pi]",
+    "physicality": "Hermitian PSD with unit diagonal in every accepted draw",
+    "target_loop": "S1-S2-S3, fixed before sampling",
+    "target_functional": "phi_12 + phi_23 - phi_13",
+    "typical_loop_justification": "The prior is invariant under station permutations, so every triangle loop has the same ensemble distribution."
+  },
+  "monte_carlo": {
+    "accepted_samples_per_N": 600,
+    "rng_seed": 20260716,
+    "elapsed_seconds": 192.88099193572998,
+    "averaging_for_fig5": "Arithmetic mean Fisher gain of the fixed typical loop at each magnitude"
+  },
+  "validation": {
+    "maximum_all_edge_magnitude_error": 2.220446049250313e-16,
+    "maximum_edge_fisher_relative_error": 1.5543122344752192e-15,
+    "maximum_direct_vs_covariance_shortcut_relative_error": 1.3322676295501878e-15,
+    "per_N": {
+      "6": {
+        "proposal_acceptance": 1.0,
+        "minimum_coherence_eigenvalue": 0.25298949133207665,
+        "median_coherence_eigenvalue": 0.33856299162416004,
+        "closure_phase_mean": 0.0062463829833089585,
+        "closure_phase_std": 0.19741926154246942,
+        "closure_phase_05_95": [
+          -0.3282048549772346,
+          0.3194944082578273
+        ],
+        "mean_kappa_operator": 0.22880277337167315,
+        "mean_commutator_B_frobenius_norm": 2.605225265468641
+      },
+      "20": {
+        "proposal_acceptance": 1.0,
+        "minimum_coherence_eigenvalue": 0.00124002375149448,
+        "median_coherence_eigenvalue": 0.08081774013384646,
+        "closure_phase_mean": 0.012313982614771835,
+        "closure_phase_std": 0.20981223374936256,
+        "closure_phase_05_95": [
+          -0.3337389513289774,
+          0.37682598172177945
+        ],
+        "mean_kappa_operator": 0.7698818181488489,
+        "mean_commutator_B_frobenius_norm": 86.30723396847189
+      }
+    }
+  },
+  "gain_by_N_and_magnitude": {
+    "6": [
+      {
+        "magnitude_ab": 10.0,
+        "source_fraction_a_over_s0": 0.9999464210769264,
+        "mean_fisher_gain": 8.84901990955284,
+        "sem_fisher_gain": 0.011402724697459081,
+        "median_fisher_gain": 8.84260984486505,
+        "quantile_05_fisher_gain": 8.417638342955634,
+        "quantile_95_fisher_gain": 9.317893979053842,
+        "mean_snr_gain": 2.9743598985667377,
+        "snr_from_mean_fisher": 2.9747302246679177,
+        "equal_real_g_fisher_gain": 9.999464239474737
+      },
+      {
+        "magnitude_ab": 11.0,
+        "source_fraction_a_over_s0": 0.9998654267312577,
+        "mean_fisher_gain": 8.848466905699963,
+        "sem_fisher_gain": 0.011400377036666832,
+        "median_fisher_gain": 8.842058800451111,
+        "quantile_05_fisher_gain": 8.417172576405372,
+        "quantile_95_fisher_gain": 9.317242481806828,
+        "mean_snr_gain": 2.9742670646042395,
+        "snr_from_mean_fisher": 2.9746372729628674,
+        "equal_real_g_fisher_gain": 9.998654448387855
+      },
+      {
+        "magnitude_ab": 12.0,
+        "source_fraction_a_over_s0": 0.9996620359941896,
+        "mean_fisher_gain": 8.847078524134401,
+        "sem_fisher_gain": 0.011394483858681798,
+        "median_fisher_gain": 8.840675336721617,
+        "quantile_05_fisher_gain": 8.416003183318606,
+        "quantile_95_fisher_gain": 9.315606861367742,
+        "mean_snr_gain": 2.9740339810679237,
+        "snr_from_mean_fisher": 2.9744038939146114,
+        "equal_real_g_fisher_gain": 9.996621501752697
+      },
+      {
+        "magnitude_ab": 13.0,
+        "source_fraction_a_over_s0": 0.9991515063484931,
+        "mean_fisher_gain": 8.843595486031072,
+        "sem_fisher_gain": 0.01137970529899289,
+        "median_fisher_gain": 8.837204626149394,
+        "quantile_05_fisher_gain": 8.413069326754657,
+        "quantile_95_fisher_gain": 9.311503828719163,
+        "mean_snr_gain": 2.973449162312403,
+        "snr_from_mean_fisher": 2.973818334402939,
+        "equal_real_g_fisher_gain": 9.99152225679622
+      },
+      {
+        "magnitude_ab": 14.0,
+        "source_fraction_a_over_s0": 0.997871410919057,
+        "mean_fisher_gain": 8.834874271413225,
+        "sem_fisher_gain": 0.011342736731719729,
+        "median_fisher_gain": 8.828514216720013,
+        "quantile_05_fisher_gain": 8.40572198571618,
+        "quantile_95_fisher_gain": 9.301231800118428,
+        "mean_snr_gain": 2.971984318893855,
+        "snr_from_mean_fisher": 2.9723516399331396,
+        "equal_real_g_fisher_gain": 9.978759321866118
+      },
+      {
+        "magnitude_ab": 15.0,
+        "source_fraction_a_over_s0": 0.9946703776796587,
+        "mean_fisher_gain": 8.81314131112362,
+        "sem_fisher_gain": 0.011250833841157985,
+        "median_fisher_gain": 8.806857637746932,
+        "quantile_05_fisher_gain": 8.387405034004638,
+        "quantile_95_fisher_gain": 9.275644192467997,
+        "mean_snr_gain": 2.9683308045849572,
+        "snr_from_mean_fisher": 2.968693536073338,
+        "equal_real_g_fisher_gain": 9.946986319690449
+      },
+      {
+        "magnitude_ab": 16.0,
+        "source_fraction_a_over_s0": 0.9867196045619719,
+        "mean_fisher_gain": 8.759622816391193,
+        "sem_fisher_gain": 0.01102586589321692,
+        "median_fisher_gain": 8.75352490491683,
+        "quantile_05_fisher_gain": 8.342252136272343,
+        "quantile_95_fisher_gain": 9.212693806177594,
+        "mean_snr_gain": 2.9593144271437453,
+        "snr_from_mean_fisher": 2.9596659974380883,
+        "equal_real_g_fisher_gain": 9.86893661914492
+      },
+      {
+        "magnitude_ab": 17.0,
+        "source_fraction_a_over_s0": 0.9672977650721599,
+        "mean_fisher_gain": 8.631596517064368,
+        "sem_fisher_gain": 0.010495474218469055,
+        "median_fisher_gain": 8.625929623465108,
+        "quantile_05_fisher_gain": 8.233537318275776,
+        "quantile_95_fisher_gain": 9.062452588320308,
+        "mean_snr_gain": 2.9376322043484797,
+        "snr_from_mean_fisher": 2.937957882112058,
+        "equal_real_g_fisher_gain": 9.683333357653428
+      },
+      {
+        "magnitude_ab": 18.0,
+        "source_fraction_a_over_s0": 0.921725740835111,
+        "mean_fisher_gain": 8.345463246226386,
+        "sem_fisher_gain": 0.009349678800954084,
+        "median_fisher_gain": 8.340692668676628,
+        "quantile_05_fisher_gain": 7.988536767054296,
+        "quantile_95_fisher_gain": 8.728438521401166,
+        "mean_snr_gain": 2.8885796846343412,
+        "snr_from_mean_fisher": 2.8888515445114837,
+        "equal_real_g_fisher_gain": 9.274078384978683
+      },
+      {
+        "magnitude_ab": 19.0,
+        "source_fraction_a_over_s0": 0.8241896607761786,
+        "mean_fisher_gain": 7.792832102692043,
+        "sem_fisher_gain": 0.007291429608923458,
+        "median_fisher_gain": 7.789844010689399,
+        "quantile_05_fisher_gain": 7.514316262049423,
+        "quantile_95_fisher_gain": 8.090205440393051,
+        "mean_snr_gain": 2.7913812236678455,
+        "snr_from_mean_fisher": 2.7915644543323808,
+        "equal_real_g_fisher_gain": 8.50477297775866
+      },
+      {
+        "magnitude_ab": 20.0,
+        "source_fraction_a_over_s0": 0.651118843205386,
+        "mean_fisher_gain": 6.973971950479057,
+        "sem_fisher_gain": 0.004615805338642054,
+        "median_fisher_gain": 6.972548317595828,
+        "quantile_05_fisher_gain": 6.797277258284904,
+        "quantile_95_fisher_gain": 7.1609768887804615,
+        "mean_snr_gain": 2.6407411725184,
+        "snr_from_mean_fisher": 2.640827891112758,
+        "equal_real_g_fisher_gain": 7.413551556879403
+      },
+      {
+        "magnitude_ab": 21.0,
+        "source_fraction_a_over_s0": 0.42627312014687274,
+        "mean_fisher_gain": 6.136867416135356,
+        "sem_fisher_gain": 0.002341784361768271,
+        "median_fisher_gain": 6.13639546952353,
+        "quantile_05_fisher_gain": 6.046785326420506,
+        "quantile_95_fisher_gain": 6.2310763691136835,
+        "mean_snr_gain": 2.477243123554941,
+        "snr_from_mean_fisher": 2.477270154047668,
+        "equal_real_g_fisher_gain": 6.354342756688047
+      },
+      {
+        "magnitude_ab": 22.0,
+        "source_fraction_a_over_s0": 0.2282697138754963,
+        "mean_fisher_gain": 5.55051390188859,
+        "sem_fisher_gain": 0.0010265461497656115,
+        "median_fisher_gain": 5.550457730924172,
+        "quantile_05_fisher_gain": 5.510902199848394,
+        "quantile_95_fisher_gain": 5.5915942280240465,
+        "mean_snr_gain": 2.3559468285363354,
+        "snr_from_mean_fisher": 2.3559528649547703,
+        "equal_real_g_fisher_gain": 5.644199954313631
+      }
+    ],
+    "20": [
+      {
+        "magnitude_ab": 10.0,
+        "source_fraction_a_over_s0": 0.9999464210769264,
+        "mean_fisher_gain": 29.453970608853815,
+        "sem_fisher_gain": 0.03220812403721054,
+        "median_fisher_gain": 29.4514622402529,
+        "quantile_05_fisher_gain": 28.134354857593546,
+        "quantile_95_fisher_gain": 30.68422784794292,
+        "mean_snr_gain": 5.426662820001179,
+        "snr_from_mean_fisher": 5.427151242489361,
+        "equal_real_g_fisher_gain": 37.997964110004
+      },
+      {
+        "magnitude_ab": 11.0,
+        "source_fraction_a_over_s0": 0.9998654267312577,
+        "mean_fisher_gain": 29.452656723207376,
+        "sem_fisher_gain": 0.03220251888318062,
+        "median_fisher_gain": 29.450150829335193,
+        "quantile_05_fisher_gain": 28.133265792765453,
+        "quantile_95_fisher_gain": 30.68269065106294,
+        "mean_snr_gain": 5.426541908807202,
+        "snr_from_mean_fisher": 5.427030193688568,
+        "equal_real_g_fisher_gain": 37.99488690387385
+      },
+      {
+        "magnitude_ab": 12.0,
+        "source_fraction_a_over_s0": 0.9996620359941896,
+        "mean_fisher_gain": 29.44935784744329,
+        "sem_fisher_gain": 0.03218844741715226,
+        "median_fisher_gain": 29.44685816406244,
+        "quantile_05_fisher_gain": 28.130531325074617,
+        "quantile_95_fisher_gain": 30.678831175295954,
+        "mean_snr_gain": 5.426238315584243,
+        "snr_from_mean_fisher": 5.426726255067901,
+        "equal_real_g_fisher_gain": 37.98716170666025
+      },
+      {
+        "magnitude_ab": 13.0,
+        "source_fraction_a_over_s0": 0.9991515063484931,
+        "mean_fisher_gain": 29.441080620109037,
+        "sem_fisher_gain": 0.03215315217089041,
+        "median_fisher_gain": 29.438596500593153,
+        "quantile_05_fisher_gain": 28.12366983407146,
+        "quantile_95_fisher_gain": 30.669147878737142,
+        "mean_snr_gain": 5.425476492560868,
+        "snr_from_mean_fisher": 5.425963566050646,
+        "equal_real_g_fisher_gain": 37.96778457582564
+      },
+      {
+        "magnitude_ab": 14.0,
+        "source_fraction_a_over_s0": 0.997871410919057,
+        "mean_fisher_gain": 29.420346870003364,
+        "sem_fisher_gain": 0.03206481304891105,
+        "median_fisher_gain": 29.41790161797492,
+        "quantile_05_fisher_gain": 28.106479727503707,
+        "quantile_95_fisher_gain": 30.64489540409227,
+        "mean_snr_gain": 5.4235677158940945,
+        "snr_from_mean_fisher": 5.42405262419193,
+        "equal_real_g_fisher_gain": 37.919285423091246
+      },
+      {
+        "magnitude_ab": 15.0,
+        "source_fraction_a_over_s0": 0.9946703776796587,
+        "mean_fisher_gain": 29.368627328368998,
+        "sem_fisher_gain": 0.031844905673691526,
+        "median_fisher_gain": 29.36627829141495,
+        "quantile_05_fisher_gain": 28.063583130920275,
+        "quantile_95_fisher_gain": 30.584419445686184,
+        "mean_snr_gain": 5.418803383940522,
+        "snr_from_mean_fisher": 5.4192829164354395,
+        "equal_real_g_fisher_gain": 37.79854801482371
+      },
+      {
+        "magnitude_ab": 16.0,
+        "source_fraction_a_over_s0": 0.9867196045619719,
+        "mean_fisher_gain": 29.240949618423233,
+        "sem_fisher_gain": 0.03130478366382573,
+        "median_fisher_gain": 29.23883360387617,
+        "quantile_05_fisher_gain": 27.95758523156032,
+        "quantile_95_fisher_gain": 30.435252634767362,
+        "mean_snr_gain": 5.407023725553116,
+        "snr_from_mean_fisher": 5.407490140390755,
+        "equal_real_g_fisher_gain": 37.50195915275069
+      },
+      {
+        "magnitude_ab": 17.0,
+        "source_fraction_a_over_s0": 0.9672977650721599,
+        "mean_fisher_gain": 28.93368715502683,
+        "sem_fisher_gain": 0.030020959901104545,
+        "median_fisher_gain": 28.93210586843186,
+        "quantile_05_fisher_gain": 27.70314471116683,
+        "quantile_95_fisher_gain": 30.07701493223378,
+        "mean_snr_gain": 5.378568557409878,
+        "snr_from_mean_fisher": 5.379004290296377,
+        "equal_real_g_fisher_gain": 36.796666759083024
+      },
+      {
+        "magnitude_ab": 18.0,
+        "source_fraction_a_over_s0": 0.921725740835111,
+        "mean_fisher_gain": 28.237489328375457,
+        "sem_fisher_gain": 0.027195034042180388,
+        "median_fisher_gain": 28.23864507060035,
+        "quantile_05_fisher_gain": 27.125506132453342,
+        "quantile_95_fisher_gain": 29.26912918490227,
+        "mean_snr_gain": 5.313525124170589,
+        "snr_from_mean_fisher": 5.313895871051244,
+        "equal_real_g_fisher_gain": 35.241497862919
+      },
+      {
+        "magnitude_ab": 19.0,
+        "source_fraction_a_over_s0": 0.8241896607761786,
+        "mean_fisher_gain": 26.854684356308944,
+        "sem_fisher_gain": 0.02191801711276478,
+        "median_fisher_gain": 26.861775099251616,
+        "quantile_05_fisher_gain": 25.96307787288162,
+        "quantile_95_fisher_gain": 27.68554952524386,
+        "mean_snr_gain": 5.1818910576869355,
+        "snr_from_mean_fisher": 5.182150553226811,
+        "equal_real_g_fisher_gain": 32.318137315482915
+      },
+      {
+        "magnitude_ab": 20.0,
+        "source_fraction_a_over_s0": 0.651118843205386,
+        "mean_fisher_gain": 24.708288298902982,
+        "sem_fisher_gain": 0.014589931459977156,
+        "median_fisher_gain": 24.71702766514599,
+        "quantile_05_fisher_gain": 24.119695700136326,
+        "quantile_95_fisher_gain": 25.26160417701143,
+        "mean_snr_gain": 4.970613080830182,
+        "snr_from_mean_fisher": 4.970743234054942,
+        "equal_real_g_fisher_gain": 28.17149591614173
+      },
+      {
+        "magnitude_ab": 21.0,
+        "source_fraction_a_over_s0": 0.42627312014687274,
+        "mean_fisher_gain": 22.384947450016465,
+        "sem_fisher_gain": 0.007806858712460428,
+        "median_fisher_gain": 22.39100159449601,
+        "quantile_05_fisher_gain": 22.072539229400732,
+        "quantile_95_fisher_gain": 22.679077409786817,
+        "mean_snr_gain": 4.7312301785511135,
+        "snr_from_mean_fisher": 4.731273343405184,
+        "equal_real_g_fisher_gain": 24.14650247541458
+      },
+      {
+        "magnitude_ab": 22.0,
+        "source_fraction_a_over_s0": 0.2282697138754963,
+        "mean_fisher_gain": 20.67379026524643,
+        "sem_fisher_gain": 0.0035565167900325195,
+        "median_fisher_gain": 20.67699666461324,
+        "quantile_05_fisher_gain": 20.53228289713572,
+        "quantile_95_fisher_gain": 20.807124348706555,
+        "mean_snr_gain": 4.54683390521314,
+        "snr_from_mean_fisher": 4.546843989543344,
+        "equal_real_g_fisher_gain": 21.4479598263918
+      }
+    ]
+  }
+}
