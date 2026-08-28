@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
 EXCLUDED = {"MANIFEST.tsv", "SHA256SUMS.txt"}
-EXCLUDED_PARTS = {"__pycache__", "mplconfig"}
+EXCLUDED_PARTS = {".git", "__pycache__", "mplconfig"}
 
 
 def digest(path: Path) -> str:

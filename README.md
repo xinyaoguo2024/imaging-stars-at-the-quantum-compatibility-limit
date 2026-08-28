@@ -1,7 +1,7 @@
 # Paper Figure and Data Reproducibility Archive
 
-This archive accompanies the latest PRX-format manuscript in
-`imaging_stars_at_the_quantum_compatibility_limit__0712_-5`.
+This archive accompanies the latest PRX-format manuscript,
+*Imaging Stars at the Quantum Compatibility Limit*.
 Each of the four modules contains an independent execution entry point, source
 code, raw or intermediate data, canonical manuscript outputs, and numerical
 validation. No module depends on the historical project folders outside this
